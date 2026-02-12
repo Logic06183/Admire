@@ -1,0 +1,29 @@
+{
+  "analysis_date": "2026-02-09T17:04:55.855445",
+  "data_coverage": {
+    "start_date": "2014-01-01 00:00:00",
+    "end_date": "2024-12-30 23:00:00",
+    "temperature_records": 96408,
+    "pm25_records": 248654
+  },
+  "temperature_summary": {
+    "mean_c": 16.545981724245305,
+    "median_c": 16.71383434586167,
+    "min_c": -3.762568834092861,
+    "max_c": 36.71637437608507,
+    "std_c": 6.349281716476038,
+    "trend_c_per_year": -0.01215274434459275
+  },
+  "pm25_summary": {
+    "mean_ugm3": 4.892003271344923e-08,
+    "median_ugm3": 2.3424103819007332e-08,
+    "min_ugm3": 0.0,
+    "max_ugm3": 1.2807790050409003e-06,
+    "std_ugm3": 7.571402636232372e-08,
+    "trend_ugm3_per_year": -6.373537601754386e-09,
+    "years_exceeding_who_guideline": 0
+  },
+  "correlation": {
+    "temp_pm25_monthly": -0.3789797590219117
+  }
+}

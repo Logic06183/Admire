@@ -1,0 +1,13 @@
+# Soweto Climate Data Extraction Pipeline
+# Python Dependencies
+
+# Core GEE libraries
+earthengine-api>=0.1.384
+geemap>=0.30.0
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Utilities
+python-dateutil>=2.8.0

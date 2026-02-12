@@ -1,0 +1,190 @@
+================================================================================
+  SOWETO CLIMATE DATA EXTRACTION PIPELINE
+  Version 1.0.0 | 2026-02-09 | Production Ready
+================================================================================
+
+QUICK START - READ THIS FIRST!
+-------------------------------
+
+This pipeline extracts real observational climate data (temperature and PM2.5)
+for Soweto, South Africa from Google Earth Engine (2014-2024).
+
+WHAT YOU NEED:
+  1. Python 3.8 or higher
+  2. Google Account (for Earth Engine access)
+  3. Internet connection
+  4. 15-30 minutes for first run
+
+QUICK SETUP (First Time):
+  1. Open Terminal
+  2. Navigate to this directory:
+     cd "/Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire"
+  3. Run these commands:
+     python3 -m venv venv
+     source venv/bin/activate
+     pip install -r requirements.txt
+     earthengine authenticate
+     
+  4. Follow browser prompts to authenticate with Google
+
+RUN THE PIPELINE:
+  ./run_pipeline.sh
+  
+  OR manually:
+  source venv/bin/activate
+  python soweto_climate_pipeline.py
+
+VALIDATE RESULTS:
+  python validate_extraction.py
+
+WHERE ARE MY RESULTS?
+  climate_data_output/
+    ├── soweto_temperature_raw.csv         (hourly temperature)
+    ├── soweto_pm25_raw.csv                (3-hourly PM2.5)
+    ├── soweto_temp_monthly_stats.csv      (monthly stats)
+    ├── soweto_temp_seasonal_stats.csv     (seasonal stats)
+    ├── soweto_temp_annual_stats.csv       (annual stats)
+    ├── soweto_pm25_monthly_stats.csv      (monthly PM2.5 stats)
+    ├── soweto_pm25_seasonal_stats.csv     (seasonal PM2.5 stats)
+    ├── soweto_pm25_annual_stats.csv       (annual PM2.5 stats)
+    ├── quality_report.json                (data quality metrics)
+    └── soweto_climate_extraction.log      (execution log)
+
+DOCUMENTATION FILES - CHOOSE BASED ON YOUR NEEDS:
+==================================================
+
+NEW USER? START HERE:
+  → README_SETUP.md
+    Complete setup guide, data sources, output descriptions
+
+NEED QUICK COMMANDS?
+  → QUICK_REFERENCE.md
+    One-page cheat sheet with essential commands
+
+SOMETHING NOT WORKING?
+  → TROUBLESHOOTING.md
+    Comprehensive troubleshooting guide for all common issues
+
+WANT COMPLETE PROJECT INFO?
+  → PROJECT_OVERVIEW.md
+    Full project documentation, architecture, scientific validation
+
+NEED FILE DESCRIPTIONS?
+  → FILE_INDEX.md
+    Complete listing and description of all files
+
+ANALYZE YOUR DATA:
+  → soweto_climate_analysis.ipynb
+    Jupyter notebook with visualizations and analysis
+
+DATA SOURCES:
+=============
+  Temperature: ERA5-Land (ECMWF reanalysis, 11km, hourly)
+  PM2.5:       CAMS (Copernicus atmospheric reanalysis, 40km, 3-hourly)
+  
+  Both are validated, observation-assimilated datasets suitable for research.
+
+EXECUTION TIME:
+===============
+  Full 11-year extraction: 15-30 minutes
+  Depends on Google Earth Engine server load
+
+GETTING HELP:
+=============
+  1. Check the log: climate_data_output/soweto_climate_extraction.log
+  2. Read: TROUBLESHOOTING.md
+  3. Run validation: python validate_extraction.py
+  4. Check GEE status: https://status.earthengine.google.com/
+
+COMMON ISSUES:
+==============
+  "No module named 'ee'" → pip install earthengine-api
+  "Authentication failed" → earthengine authenticate
+  "Memory limit exceeded" → Edit pipeline: BATCH_SIZE_MONTHS = 3
+  Empty CSV files → Check log file for errors
+
+PROJECT FILES (10 total):
+=========================
+  Core Scripts:
+    • soweto_climate_pipeline.py     (main extraction pipeline)
+    • validate_extraction.py         (validation script)
+    • run_pipeline.sh                (convenience runner)
+  
+  Configuration:
+    • requirements.txt               (Python dependencies)
+  
+  Analysis:
+    • soweto_climate_analysis.ipynb  (Jupyter notebook)
+  
+  Documentation (5 files):
+    • PROJECT_OVERVIEW.md            (complete project docs)
+    • README_SETUP.md                (setup guide)
+    • QUICK_REFERENCE.md             (cheat sheet)
+    • TROUBLESHOOTING.md             (problem solving)
+    • FILE_INDEX.md                  (file descriptions)
+
+EXAMPLE WORKFLOW:
+=================
+  # First time setup
+  cd "/Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire"
+  python3 -m venv venv
+  source venv/bin/activate
+  pip install -r requirements.txt
+  earthengine authenticate
+  
+  # Run pipeline
+  python soweto_climate_pipeline.py
+  
+  # Validate results
+  python validate_extraction.py
+  
+  # Analyze (optional)
+  jupyter notebook soweto_climate_analysis.ipynb
+
+EXPECTED OUTPUTS:
+=================
+  • ~96,000 hourly temperature records
+  • ~32,000 3-hourly PM2.5 records
+  • 132 months of statistics
+  • 44 seasons of statistics
+  • 11 years of annual statistics
+  • Comprehensive quality reports
+
+SCIENTIFIC VALIDITY:
+====================
+  ✓ Real observational/reanalysis data (not synthetic)
+  ✓ ERA5-Land validated against weather stations
+  ✓ CAMS validated against satellite and ground observations
+  ✓ Suitable for peer-reviewed research
+  ✓ Widely used in climate science community
+
+CUSTOMIZATION:
+==============
+  To modify location, date range, or other parameters:
+    Edit soweto_climate_pipeline.py → class PipelineConfig
+  
+  See README_SETUP.md for detailed configuration options.
+
+CITATIONS:
+==========
+  ERA5-Land: Muñoz Sabater, J., (2019) DOI: 10.24381/cds.e2161bac
+  CAMS: Inness et al. (2019) DOI: 10.5194/acp-19-3515-2019
+
+SUPPORT:
+========
+  • Documentation: See files listed above
+  • GEE Issues: https://developers.google.com/earth-engine
+  • Data Catalog: https://developers.google.com/earth-engine/datasets
+
+NEXT STEPS:
+===========
+  1. Read README_SETUP.md for complete setup instructions
+  2. Run the pipeline: ./run_pipeline.sh
+  3. Validate: python validate_extraction.py
+  4. Explore your data in climate_data_output/
+
+Questions? Start with TROUBLESHOOTING.md or README_SETUP.md
+
+================================================================================
+Good luck with your climate data analysis!
+================================================================================

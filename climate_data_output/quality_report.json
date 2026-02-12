@@ -1,0 +1,38 @@
+{
+  "temperature": {
+    "variable": "temperature_c",
+    "total_records": 96408,
+    "missing_values": "0",
+    "missing_percentage": 0.0,
+    "outlier_count": 0,
+    "date_range_actual": "2014-01-01 00:00:00 to 2024-12-30 23:00:00",
+    "date_range_expected": "2014-01-01 00:00:00 to 2024-12-31 00:00:00",
+    "min_value": -3.7625688340928605,
+    "max_value": 36.71637437608507,
+    "mean_value": 16.545981724245305,
+    "status": "PASSED"
+  },
+  "pm25": {
+    "variable": "pm25",
+    "total_records": 248654,
+    "missing_values": "574",
+    "missing_percentage": 0.23084285794718767,
+    "outlier_count": 18127,
+    "date_range_actual": "2016-06-22 12:00:00 to 2024-12-30 21:00:00",
+    "date_range_expected": "2014-01-01 00:00:00 to 2024-12-31 00:00:00",
+    "min_value": 0.0,
+    "max_value": 1280.7790050409005,
+    "mean_value": 48.920032713449245,
+    "status": "PASSED"
+  },
+  "pipeline_info": {
+    "execution_date": "2026-02-11T12:36:59.276811",
+    "location": "Soweto (-26.2678, 27.8585)",
+    "buffer_distance_m": 5000,
+    "date_range": "2014-01-01 to 2024-12-31",
+    "data_sources": {
+      "temperature": "ECMWF/ERA5_LAND/HOURLY",
+      "pm25": "ECMWF/CAMS/NRT"
+    }
+  }
+}

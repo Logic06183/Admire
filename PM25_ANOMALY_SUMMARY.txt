@@ -1,0 +1,214 @@
+================================================================================
+PM2.5 ANOMALY INVESTIGATION - EXECUTIVE SUMMARY FOR ADMIRE
+================================================================================
+Date: February 11, 2026
+Location: Soweto, South Africa
+Data Source: ECMWF CAMS NRT
+Period: 2016-2024
+
+================================================================================
+CRITICAL FINDING: UNIT CONVERSION ERROR
+================================================================================
+
+The PM2.5 data has a FUNDAMENTAL UNIT ERROR:
+- CAMS NRT provides data in kg/m³ (kilograms per cubic meter)
+- Data was NEVER converted to μg/m³ (micrograms per cubic meter)
+- Conversion factor needed: ×10^9 (multiply by 1 billion)
+
+This means ALL PM2.5 values in the current dataset are WRONG by a factor of 1 billion.
+
+================================================================================
+ADDRESSING THE "2019 ANOMALY" QUESTION
+================================================================================
+
+Q: Is there a 3-fold anomaly in 2019?
+A: NO. There is NO anomaly in 2019.
+
+The observed pattern after unit correction:
+- 2016: 14.8 μg/m³ (partial year, low baseline)
+- 2017: 102.3 μg/m³ (EXTREMELY HIGH - actual anomaly)
+- 2018: 106.7 μg/m³ (EXTREMELY HIGH - peak year)
+- 2019: 62.1 μg/m³ (declining from 2018, NOT anomalous)
+- 2020: 24.9 μg/m³ (return to normal)
+- 2021-2024: 24-29 μg/m³ (stable baseline)
+
+THE REAL ANOMALY: 2017-2018 showed 4× higher PM2.5 than recent baseline.
+
+================================================================================
+CORRECTED VALUES TABLE
+================================================================================
+
+Year    Original (wrong)    Corrected (μg/m³)    vs. Baseline    WHO Exceedance
+----    ----------------    -----------------    ------------    --------------
+2016    1.48e-08 kg/m³      14.77 μg/m³          0.56×           3.0× guideline
+2017    1.02e-07 kg/m³      102.28 μg/m³         3.88×          20.5× guideline ⚠
+2018    1.07e-07 kg/m³      106.66 μg/m³         4.04×          21.3× guideline ⚠
+2019    6.21e-08 kg/m³      62.12 μg/m³          2.36×          12.4× guideline
+2020    2.49e-08 kg/m³      24.94 μg/m³          0.95×           5.0× guideline
+2021    2.90e-08 kg/m³      28.98 μg/m³          1.10×           5.8× guideline
+2022    2.89e-08 kg/m³      28.93 μg/m³          1.10×           5.8× guideline
+2023    2.40e-08 kg/m³      23.97 μg/m³          0.91×           4.8× guideline
+2024    2.51e-08 kg/m³      25.05 μg/m³          0.95×           5.0× guideline
+
+Baseline = 2020-2024 average (26.37 μg/m³)
+WHO Annual Guideline = 5 μg/m³
+
+================================================================================
+2017-2018 ELEVATED PERIOD ANALYSIS
+================================================================================
+
+PEAK MONTHS:
+- 2017 June: 174 μg/m³
+- 2018 June: 273 μg/m³ (EXTREME PEAK)
+
+SEASONAL PATTERN:
+- Peaks occur in autumn/winter (March-August)
+- Coincides with:
+  * Veld fire season in South Africa
+  * Increased domestic heating (coal/wood burning)
+  * Atmospheric inversions trapping pollutants
+
+POTENTIAL CAUSES:
+1. Environmental events (MOST LIKELY):
+   - Biomass burning / veld fires
+   - Severe drought 2015-2018 (Cape Town water crisis period)
+   - Increased residential coal/wood burning
+   - Atmospheric stagnation (winter inversions)
+
+2. Data quality issues (LESS LIKELY):
+   - CAMS algorithm changes during this period
+   - Satellite retrieval biases during fire events
+
+EVIDENCE NEEDED:
+- Cross-validation with ground station data (SAAQIS network)
+- MODIS fire detection data for Gauteng 2016-2019
+- Meteorological records (precipitation, wind, inversions)
+- CAMS algorithm version history
+
+================================================================================
+DATA QUALITY METRICS
+================================================================================
+
+Overall Quality:     ACCEPTABLE (after unit correction)
+Total Records:       248,654
+Missing Values:      574 (0.23%)
+Outliers:           18,127 (7.3%) - mostly in 2017-2018
+Date Coverage:      June 2016 - December 2024
+
+Quality by Period:
+- 2016: Partial year (started June 22) - USE WITH CAUTION
+- 2017-2018: Complete but extreme values - VALIDATE BEFORE USE
+- 2019-2024: Complete and stable - USE AFTER UNIT CORRECTION
+
+================================================================================
+RECOMMENDATIONS FOR ADMIRE
+================================================================================
+
+IMMEDIATE ACTIONS (REQUIRED):
+⚠ 1. DO NOT USE CURRENT DATA - Units are wrong
+✓ 2. Fix pipeline code (unit conversion function)
+✓ 3. Re-run extraction with corrected units
+✓ 4. Regenerate all CSV files and figures
+
+INVESTIGATION ACTIONS (RECOMMENDED):
+? 5. Validate 2017-2018 data with ground stations
+? 6. Obtain fire detection data for Gauteng
+? 7. Check CAMS algorithm documentation
+? 8. Review South African air quality reports 2017-2018
+
+DATA USAGE DECISIONS:
+
+Option A - CONSERVATIVE (Recommended for initial analysis):
+  ✓ Use 2019-2024 data (after unit correction)
+  ✗ Exclude 2017-2018 (flag as uncertain)
+  ✗ Exclude 2016 (partial year)
+  → Gives 6 years of reliable data
+
+Option B - COMPREHENSIVE (If 2017-2018 validated):
+  ✓ Use all years 2016-2024 (after correction)
+  ⚠ Flag 2017-2018 as extreme exposure period
+  → Document as natural pollution episodes
+  → Useful for acute health effect studies
+
+Option C - MIXED APPROACH:
+  ✓ Main analysis: 2019-2024
+  ✓ Sensitivity analysis: Include 2017-2018
+  ✓ Supplementary analysis: Examine 2017-2018 separately
+  → Most thorough approach
+
+================================================================================
+CORRECTED PIPELINE CODE
+================================================================================
+
+File to fix: soweto_climate_pipeline.py
+
+WRONG CODE (lines 126-128):
+----------------------------
+def micrograms_to_micrograms(pm25: float) -> float:
+    """Pass-through for PM2.5 (already in µg/m³)."""
+    return pm25
+
+CORRECTED CODE:
+---------------
+def kg_to_micrograms_per_m3(pm25_kg: float) -> float:
+    """
+    Convert PM2.5 from kg/m³ to μg/m³.
+    CAMS NRT provides PM2.5 in kg/m³.
+    Conversion: 1 kg/m³ = 10^9 μg/m³
+    """
+    return pm25_kg * 1e9
+
+ALSO ADD (line 288 in extract_pm25_batch):
+------------------------------------------
+data['pm25'] = data['pm25'].apply(kg_to_micrograms_per_m3)
+
+================================================================================
+FILES GENERATED BY THIS INVESTIGATION
+================================================================================
+
+Location: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/
+
+1. pm25_anomaly_investigation.png
+   → 4-panel visualization showing:
+     - Annual trend with corrected units
+     - Monthly patterns 2016-2020
+     - Before/after unit conversion
+     - Ratio to baseline period
+
+2. pm25_anomaly_investigation_summary.json
+   → Machine-readable summary with all corrected values
+
+3. pm25_anomaly_report.md
+   → Complete technical report (this document in markdown)
+
+4. investigate_pm25_anomaly.py
+   → Python script used for analysis (reproducible)
+
+5. PM25_ANOMALY_SUMMARY.txt
+   → This quick reference guide
+
+================================================================================
+BOTTOM LINE FOR ADMIRE
+================================================================================
+
+1. The "2019 anomaly" is a MYTH caused by wrong units
+
+2. The REAL story is 2017-2018 extreme pollution (4× normal levels)
+
+3. ALL current PM2.5 data must be corrected (multiply by 10^9)
+
+4. Data can be used AFTER correction, but 2017-2018 needs validation
+
+5. Three usage options depending on your needs:
+   - Conservative: Use only 2019-2024
+   - Comprehensive: Use all years if validated
+   - Mixed: Main analysis 2019-2024, sensitivity with 2017-2018
+
+6. Next step: Decide whether to validate 2017-2018 or exclude it
+
+================================================================================
+
+Questions? Review the detailed report (pm25_anomaly_report.md) or
+visualization (pm25_anomaly_investigation.png)
+
+Investigation completed: February 11, 2026

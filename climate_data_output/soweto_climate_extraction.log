@@ -1,0 +1,968 @@
+2026-02-09 16:01:06,069 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:01:06,069 - SowetoClimatePipeline - INFO - Soweto Climate Data Extraction Pipeline Initialized
+2026-02-09 16:01:06,069 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:01:06,069 - SowetoClimatePipeline - INFO - Pipeline execution started at 2026-02-09 16:01:06.069368
+2026-02-09 16:01:06,069 - SowetoClimatePipeline - INFO - Initializing pipeline components...
+2026-02-09 16:01:09,186 - SowetoClimatePipeline - INFO - GEE authentication successful (using existing credentials)
+2026-02-09 16:01:09,187 - SowetoClimatePipeline - INFO - Pipeline initialization complete
+2026-02-09 16:01:09,187 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:01:09,187 - SowetoClimatePipeline - INFO - STARTING DATA EXTRACTION
+2026-02-09 16:01:09,187 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:01:09,188 - SowetoClimatePipeline - INFO - Generated 23 date batches
+2026-02-09 16:01:09,188 - SowetoClimatePipeline - INFO - Processing temperature_c batch 1/23
+2026-02-09 16:01:09,188 - SowetoClimatePipeline - INFO - Extracting temperature: 2014-01-01 to 2014-06-30
+2026-02-09 16:01:09,189 - SowetoClimatePipeline - ERROR - Failed to process batch 1 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,189 - SowetoClimatePipeline - INFO - Processing temperature_c batch 2/23
+2026-02-09 16:01:09,189 - SowetoClimatePipeline - INFO - Extracting temperature: 2014-06-30 to 2014-12-27
+2026-02-09 16:01:09,190 - SowetoClimatePipeline - ERROR - Failed to process batch 2 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,190 - SowetoClimatePipeline - INFO - Processing temperature_c batch 3/23
+2026-02-09 16:01:09,190 - SowetoClimatePipeline - INFO - Extracting temperature: 2014-12-27 to 2015-06-25
+2026-02-09 16:01:09,190 - SowetoClimatePipeline - ERROR - Failed to process batch 3 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,190 - SowetoClimatePipeline - INFO - Processing temperature_c batch 4/23
+2026-02-09 16:01:09,190 - SowetoClimatePipeline - INFO - Extracting temperature: 2015-06-25 to 2015-12-22
+2026-02-09 16:01:09,191 - SowetoClimatePipeline - ERROR - Failed to process batch 4 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,191 - SowetoClimatePipeline - INFO - Processing temperature_c batch 5/23
+2026-02-09 16:01:09,191 - SowetoClimatePipeline - INFO - Extracting temperature: 2015-12-22 to 2016-06-19
+2026-02-09 16:01:09,192 - SowetoClimatePipeline - ERROR - Failed to process batch 5 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,192 - SowetoClimatePipeline - INFO - Processing temperature_c batch 6/23
+2026-02-09 16:01:09,192 - SowetoClimatePipeline - INFO - Extracting temperature: 2016-06-19 to 2016-12-16
+2026-02-09 16:01:09,192 - SowetoClimatePipeline - ERROR - Failed to process batch 6 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,192 - SowetoClimatePipeline - INFO - Processing temperature_c batch 7/23
+2026-02-09 16:01:09,192 - SowetoClimatePipeline - INFO - Extracting temperature: 2016-12-16 to 2017-06-14
+2026-02-09 16:01:09,193 - SowetoClimatePipeline - ERROR - Failed to process batch 7 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,193 - SowetoClimatePipeline - INFO - Processing temperature_c batch 8/23
+2026-02-09 16:01:09,193 - SowetoClimatePipeline - INFO - Extracting temperature: 2017-06-14 to 2017-12-11
+2026-02-09 16:01:09,194 - SowetoClimatePipeline - ERROR - Failed to process batch 8 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,194 - SowetoClimatePipeline - INFO - Processing temperature_c batch 9/23
+2026-02-09 16:01:09,194 - SowetoClimatePipeline - INFO - Extracting temperature: 2017-12-11 to 2018-06-09
+2026-02-09 16:01:09,194 - SowetoClimatePipeline - ERROR - Failed to process batch 9 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,194 - SowetoClimatePipeline - INFO - Processing temperature_c batch 10/23
+2026-02-09 16:01:09,194 - SowetoClimatePipeline - INFO - Extracting temperature: 2018-06-09 to 2018-12-06
+2026-02-09 16:01:09,195 - SowetoClimatePipeline - ERROR - Failed to process batch 10 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,195 - SowetoClimatePipeline - INFO - Processing temperature_c batch 11/23
+2026-02-09 16:01:09,195 - SowetoClimatePipeline - INFO - Extracting temperature: 2018-12-06 to 2019-06-04
+2026-02-09 16:01:09,195 - SowetoClimatePipeline - ERROR - Failed to process batch 11 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,195 - SowetoClimatePipeline - INFO - Processing temperature_c batch 12/23
+2026-02-09 16:01:09,195 - SowetoClimatePipeline - INFO - Extracting temperature: 2019-06-04 to 2019-12-01
+2026-02-09 16:01:09,196 - SowetoClimatePipeline - ERROR - Failed to process batch 12 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,196 - SowetoClimatePipeline - INFO - Processing temperature_c batch 13/23
+2026-02-09 16:01:09,196 - SowetoClimatePipeline - INFO - Extracting temperature: 2019-12-01 to 2020-05-29
+2026-02-09 16:01:09,197 - SowetoClimatePipeline - ERROR - Failed to process batch 13 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,197 - SowetoClimatePipeline - INFO - Processing temperature_c batch 14/23
+2026-02-09 16:01:09,197 - SowetoClimatePipeline - INFO - Extracting temperature: 2020-05-29 to 2020-11-25
+2026-02-09 16:01:09,197 - SowetoClimatePipeline - ERROR - Failed to process batch 14 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,197 - SowetoClimatePipeline - INFO - Processing temperature_c batch 15/23
+2026-02-09 16:01:09,197 - SowetoClimatePipeline - INFO - Extracting temperature: 2020-11-25 to 2021-05-24
+2026-02-09 16:01:09,198 - SowetoClimatePipeline - ERROR - Failed to process batch 15 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,198 - SowetoClimatePipeline - INFO - Processing temperature_c batch 16/23
+2026-02-09 16:01:09,198 - SowetoClimatePipeline - INFO - Extracting temperature: 2021-05-24 to 2021-11-20
+2026-02-09 16:01:09,199 - SowetoClimatePipeline - ERROR - Failed to process batch 16 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,199 - SowetoClimatePipeline - INFO - Processing temperature_c batch 17/23
+2026-02-09 16:01:09,199 - SowetoClimatePipeline - INFO - Extracting temperature: 2021-11-20 to 2022-05-19
+2026-02-09 16:01:09,199 - SowetoClimatePipeline - ERROR - Failed to process batch 17 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,199 - SowetoClimatePipeline - INFO - Processing temperature_c batch 18/23
+2026-02-09 16:01:09,199 - SowetoClimatePipeline - INFO - Extracting temperature: 2022-05-19 to 2022-11-15
+2026-02-09 16:01:09,200 - SowetoClimatePipeline - ERROR - Failed to process batch 18 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,200 - SowetoClimatePipeline - INFO - Processing temperature_c batch 19/23
+2026-02-09 16:01:09,200 - SowetoClimatePipeline - INFO - Extracting temperature: 2022-11-15 to 2023-05-14
+2026-02-09 16:01:09,200 - SowetoClimatePipeline - ERROR - Failed to process batch 19 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,200 - SowetoClimatePipeline - INFO - Processing temperature_c batch 20/23
+2026-02-09 16:01:09,200 - SowetoClimatePipeline - INFO - Extracting temperature: 2023-05-14 to 2023-11-10
+2026-02-09 16:01:09,201 - SowetoClimatePipeline - ERROR - Failed to process batch 20 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,201 - SowetoClimatePipeline - INFO - Processing temperature_c batch 21/23
+2026-02-09 16:01:09,201 - SowetoClimatePipeline - INFO - Extracting temperature: 2023-11-10 to 2024-05-08
+2026-02-09 16:01:09,201 - SowetoClimatePipeline - ERROR - Failed to process batch 21 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,201 - SowetoClimatePipeline - INFO - Processing temperature_c batch 22/23
+2026-02-09 16:01:09,201 - SowetoClimatePipeline - INFO - Extracting temperature: 2024-05-08 to 2024-11-04
+2026-02-09 16:01:09,202 - SowetoClimatePipeline - ERROR - Failed to process batch 22 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,202 - SowetoClimatePipeline - INFO - Processing temperature_c batch 23/23
+2026-02-09 16:01:09,202 - SowetoClimatePipeline - INFO - Extracting temperature: 2024-11-04 to 2024-12-31
+2026-02-09 16:01:09,202 - SowetoClimatePipeline - ERROR - Failed to process batch 23 for temperature_c: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,203 - SowetoClimatePipeline - WARNING - No data extracted for temperature_c
+2026-02-09 16:01:09,203 - SowetoClimatePipeline - INFO - Generated 23 date batches
+2026-02-09 16:01:09,203 - SowetoClimatePipeline - INFO - Processing pm25 batch 1/23
+2026-02-09 16:01:09,203 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-01-01 to 2014-06-30
+2026-02-09 16:01:09,203 - SowetoClimatePipeline - ERROR - Failed to process batch 1 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,203 - SowetoClimatePipeline - INFO - Processing pm25 batch 2/23
+2026-02-09 16:01:09,203 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-06-30 to 2014-12-27
+2026-02-09 16:01:09,204 - SowetoClimatePipeline - ERROR - Failed to process batch 2 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,204 - SowetoClimatePipeline - INFO - Processing pm25 batch 3/23
+2026-02-09 16:01:09,204 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-12-27 to 2015-06-25
+2026-02-09 16:01:09,205 - SowetoClimatePipeline - ERROR - Failed to process batch 3 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,205 - SowetoClimatePipeline - INFO - Processing pm25 batch 4/23
+2026-02-09 16:01:09,205 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2015-06-25 to 2015-12-22
+2026-02-09 16:01:09,205 - SowetoClimatePipeline - ERROR - Failed to process batch 4 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,205 - SowetoClimatePipeline - INFO - Processing pm25 batch 5/23
+2026-02-09 16:01:09,205 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2015-12-22 to 2016-06-19
+2026-02-09 16:01:09,206 - SowetoClimatePipeline - ERROR - Failed to process batch 5 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,206 - SowetoClimatePipeline - INFO - Processing pm25 batch 6/23
+2026-02-09 16:01:09,206 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-06-19 to 2016-12-16
+2026-02-09 16:01:09,206 - SowetoClimatePipeline - ERROR - Failed to process batch 6 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,206 - SowetoClimatePipeline - INFO - Processing pm25 batch 7/23
+2026-02-09 16:01:09,206 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-12-16 to 2017-06-14
+2026-02-09 16:01:09,207 - SowetoClimatePipeline - ERROR - Failed to process batch 7 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,207 - SowetoClimatePipeline - INFO - Processing pm25 batch 8/23
+2026-02-09 16:01:09,207 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-06-14 to 2017-12-11
+2026-02-09 16:01:09,207 - SowetoClimatePipeline - ERROR - Failed to process batch 8 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,207 - SowetoClimatePipeline - INFO - Processing pm25 batch 9/23
+2026-02-09 16:01:09,207 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-12-11 to 2018-06-09
+2026-02-09 16:01:09,208 - SowetoClimatePipeline - ERROR - Failed to process batch 9 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,208 - SowetoClimatePipeline - INFO - Processing pm25 batch 10/23
+2026-02-09 16:01:09,208 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2018-06-09 to 2018-12-06
+2026-02-09 16:01:09,208 - SowetoClimatePipeline - ERROR - Failed to process batch 10 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,208 - SowetoClimatePipeline - INFO - Processing pm25 batch 11/23
+2026-02-09 16:01:09,208 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2018-12-06 to 2019-06-04
+2026-02-09 16:01:09,209 - SowetoClimatePipeline - ERROR - Failed to process batch 11 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,209 - SowetoClimatePipeline - INFO - Processing pm25 batch 12/23
+2026-02-09 16:01:09,209 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2019-06-04 to 2019-12-01
+2026-02-09 16:01:09,209 - SowetoClimatePipeline - ERROR - Failed to process batch 12 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,209 - SowetoClimatePipeline - INFO - Processing pm25 batch 13/23
+2026-02-09 16:01:09,209 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2019-12-01 to 2020-05-29
+2026-02-09 16:01:09,210 - SowetoClimatePipeline - ERROR - Failed to process batch 13 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,210 - SowetoClimatePipeline - INFO - Processing pm25 batch 14/23
+2026-02-09 16:01:09,210 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2020-05-29 to 2020-11-25
+2026-02-09 16:01:09,210 - SowetoClimatePipeline - ERROR - Failed to process batch 14 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,210 - SowetoClimatePipeline - INFO - Processing pm25 batch 15/23
+2026-02-09 16:01:09,211 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2020-11-25 to 2021-05-24
+2026-02-09 16:01:09,211 - SowetoClimatePipeline - ERROR - Failed to process batch 15 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,211 - SowetoClimatePipeline - INFO - Processing pm25 batch 16/23
+2026-02-09 16:01:09,211 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2021-05-24 to 2021-11-20
+2026-02-09 16:01:09,211 - SowetoClimatePipeline - ERROR - Failed to process batch 16 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,212 - SowetoClimatePipeline - INFO - Processing pm25 batch 17/23
+2026-02-09 16:01:09,212 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2021-11-20 to 2022-05-19
+2026-02-09 16:01:09,212 - SowetoClimatePipeline - ERROR - Failed to process batch 17 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,212 - SowetoClimatePipeline - INFO - Processing pm25 batch 18/23
+2026-02-09 16:01:09,212 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2022-05-19 to 2022-11-15
+2026-02-09 16:01:09,212 - SowetoClimatePipeline - ERROR - Failed to process batch 18 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,213 - SowetoClimatePipeline - INFO - Processing pm25 batch 19/23
+2026-02-09 16:01:09,213 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2022-11-15 to 2023-05-14
+2026-02-09 16:01:09,213 - SowetoClimatePipeline - ERROR - Failed to process batch 19 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,213 - SowetoClimatePipeline - INFO - Processing pm25 batch 20/23
+2026-02-09 16:01:09,213 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2023-05-14 to 2023-11-10
+2026-02-09 16:01:09,214 - SowetoClimatePipeline - ERROR - Failed to process batch 20 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,214 - SowetoClimatePipeline - INFO - Processing pm25 batch 21/23
+2026-02-09 16:01:09,214 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2023-11-10 to 2024-05-08
+2026-02-09 16:01:09,214 - SowetoClimatePipeline - ERROR - Failed to process batch 21 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,214 - SowetoClimatePipeline - INFO - Processing pm25 batch 22/23
+2026-02-09 16:01:09,214 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2024-05-08 to 2024-11-04
+2026-02-09 16:01:09,215 - SowetoClimatePipeline - ERROR - Failed to process batch 22 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,215 - SowetoClimatePipeline - INFO - Processing pm25 batch 23/23
+2026-02-09 16:01:09,215 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2024-11-04 to 2024-12-31
+2026-02-09 16:01:09,215 - SowetoClimatePipeline - ERROR - Failed to process batch 23 for pm25: module 'geemap' has no attribute 'ee_to_pandas'
+2026-02-09 16:01:09,215 - SowetoClimatePipeline - WARNING - No data extracted for pm25
+2026-02-09 16:01:09,215 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:01:09,215 - SowetoClimatePipeline - INFO - PERFORMING QUALITY CHECKS
+2026-02-09 16:01:09,215 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:01:09,215 - SowetoClimatePipeline - INFO - Performing quality checks for temperature_c
+2026-02-09 16:01:09,215 - SowetoClimatePipeline - ERROR - No data available for temperature_c
+2026-02-09 16:01:09,215 - SowetoClimatePipeline - INFO - Performing quality checks for pm25
+2026-02-09 16:01:09,215 - SowetoClimatePipeline - ERROR - No data available for pm25
+2026-02-09 16:01:09,215 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:01:09,215 - SowetoClimatePipeline - INFO - COMPUTING STATISTICAL AGGREGATIONS
+2026-02-09 16:01:09,215 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:01:09,215 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:01:09,215 - SowetoClimatePipeline - INFO - SAVING RESULTS
+2026-02-09 16:01:09,215 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:01:09,216 - SowetoClimatePipeline - INFO - Saved quality report: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/quality_report.json
+2026-02-09 16:01:09,216 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:01:09,216 - SowetoClimatePipeline - INFO - PIPELINE EXECUTION COMPLETE
+2026-02-09 16:01:09,216 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:01:09,216 - SowetoClimatePipeline - INFO - Duration: 0:00:03.146805
+2026-02-09 16:01:09,216 - SowetoClimatePipeline - INFO - Temperature records: 0
+2026-02-09 16:01:09,216 - SowetoClimatePipeline - INFO - PM2.5 records: 0
+2026-02-09 16:01:09,216 - SowetoClimatePipeline - INFO - Output directory: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output
+2026-02-09 16:01:09,216 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:04:20,345 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:04:20,346 - SowetoClimatePipeline - INFO - Soweto Climate Data Extraction Pipeline Initialized
+2026-02-09 16:04:20,346 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:04:20,346 - SowetoClimatePipeline - INFO - Pipeline execution started at 2026-02-09 16:04:20.346074
+2026-02-09 16:04:20,346 - SowetoClimatePipeline - INFO - Initializing pipeline components...
+2026-02-09 16:04:23,111 - SowetoClimatePipeline - INFO - GEE authentication successful (using existing credentials)
+2026-02-09 16:04:23,112 - SowetoClimatePipeline - INFO - Pipeline initialization complete
+2026-02-09 16:04:23,112 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:04:23,113 - SowetoClimatePipeline - INFO - STARTING DATA EXTRACTION
+2026-02-09 16:04:23,113 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:04:23,113 - SowetoClimatePipeline - INFO - Generated 23 date batches
+2026-02-09 16:04:23,113 - SowetoClimatePipeline - INFO - Processing temperature_c batch 1/23
+2026-02-09 16:04:23,113 - SowetoClimatePipeline - INFO - Extracting temperature: 2014-01-01 to 2014-06-30
+2026-02-09 16:04:39,312 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:04:40,315 - SowetoClimatePipeline - INFO - Processing temperature_c batch 2/23
+2026-02-09 16:04:40,315 - SowetoClimatePipeline - INFO - Extracting temperature: 2014-06-30 to 2014-12-27
+2026-02-09 16:04:54,346 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:04:55,352 - SowetoClimatePipeline - INFO - Processing temperature_c batch 3/23
+2026-02-09 16:04:55,352 - SowetoClimatePipeline - INFO - Extracting temperature: 2014-12-27 to 2015-06-25
+2026-02-09 16:05:12,426 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:05:13,431 - SowetoClimatePipeline - INFO - Processing temperature_c batch 4/23
+2026-02-09 16:05:13,432 - SowetoClimatePipeline - INFO - Extracting temperature: 2015-06-25 to 2015-12-22
+2026-02-09 16:05:34,628 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:05:35,632 - SowetoClimatePipeline - INFO - Processing temperature_c batch 5/23
+2026-02-09 16:05:35,632 - SowetoClimatePipeline - INFO - Extracting temperature: 2015-12-22 to 2016-06-19
+2026-02-09 16:05:59,129 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:06:00,130 - SowetoClimatePipeline - INFO - Processing temperature_c batch 6/23
+2026-02-09 16:06:00,131 - SowetoClimatePipeline - INFO - Extracting temperature: 2016-06-19 to 2016-12-16
+2026-02-09 16:06:20,562 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:06:21,566 - SowetoClimatePipeline - INFO - Processing temperature_c batch 7/23
+2026-02-09 16:06:21,566 - SowetoClimatePipeline - INFO - Extracting temperature: 2016-12-16 to 2017-06-14
+2026-02-09 16:06:43,773 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:06:44,777 - SowetoClimatePipeline - INFO - Processing temperature_c batch 8/23
+2026-02-09 16:06:44,777 - SowetoClimatePipeline - INFO - Extracting temperature: 2017-06-14 to 2017-12-11
+2026-02-09 16:07:07,570 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:07:08,571 - SowetoClimatePipeline - INFO - Processing temperature_c batch 9/23
+2026-02-09 16:07:08,571 - SowetoClimatePipeline - INFO - Extracting temperature: 2017-12-11 to 2018-06-09
+2026-02-09 16:07:32,035 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:07:33,048 - SowetoClimatePipeline - INFO - Processing temperature_c batch 10/23
+2026-02-09 16:07:33,049 - SowetoClimatePipeline - INFO - Extracting temperature: 2018-06-09 to 2018-12-06
+2026-02-09 16:07:52,547 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:07:53,554 - SowetoClimatePipeline - INFO - Processing temperature_c batch 11/23
+2026-02-09 16:07:53,555 - SowetoClimatePipeline - INFO - Extracting temperature: 2018-12-06 to 2019-06-04
+2026-02-09 16:08:00,232 - googleapiclient.http - WARNING - Sleeping 1.81 seconds before retry 1 of 5 for request: POST https://earthengine.googleapis.com/v1/projects/joburg-hvi/value:compute?prettyPrint=false&alt=json, after 503
+2026-02-09 16:08:22,736 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:08:23,740 - SowetoClimatePipeline - INFO - Processing temperature_c batch 12/23
+2026-02-09 16:08:23,741 - SowetoClimatePipeline - INFO - Extracting temperature: 2019-06-04 to 2019-12-01
+2026-02-09 16:08:47,695 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:08:48,698 - SowetoClimatePipeline - INFO - Processing temperature_c batch 13/23
+2026-02-09 16:08:48,698 - SowetoClimatePipeline - INFO - Extracting temperature: 2019-12-01 to 2020-05-29
+2026-02-09 16:09:16,970 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:09:17,973 - SowetoClimatePipeline - INFO - Processing temperature_c batch 14/23
+2026-02-09 16:09:17,973 - SowetoClimatePipeline - INFO - Extracting temperature: 2020-05-29 to 2020-11-25
+2026-02-09 16:09:42,916 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:09:43,919 - SowetoClimatePipeline - INFO - Processing temperature_c batch 15/23
+2026-02-09 16:09:43,919 - SowetoClimatePipeline - INFO - Extracting temperature: 2020-11-25 to 2021-05-24
+2026-02-09 16:10:02,814 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:10:03,818 - SowetoClimatePipeline - INFO - Processing temperature_c batch 16/23
+2026-02-09 16:10:03,818 - SowetoClimatePipeline - INFO - Extracting temperature: 2021-05-24 to 2021-11-20
+2026-02-09 16:10:29,782 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:10:30,788 - SowetoClimatePipeline - INFO - Processing temperature_c batch 17/23
+2026-02-09 16:10:30,788 - SowetoClimatePipeline - INFO - Extracting temperature: 2021-11-20 to 2022-05-19
+2026-02-09 16:10:49,139 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:10:50,144 - SowetoClimatePipeline - INFO - Processing temperature_c batch 18/23
+2026-02-09 16:10:50,145 - SowetoClimatePipeline - INFO - Extracting temperature: 2022-05-19 to 2022-11-15
+2026-02-09 16:11:08,520 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:11:09,527 - SowetoClimatePipeline - INFO - Processing temperature_c batch 19/23
+2026-02-09 16:11:09,528 - SowetoClimatePipeline - INFO - Extracting temperature: 2022-11-15 to 2023-05-14
+2026-02-09 16:11:52,340 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:11:53,345 - SowetoClimatePipeline - INFO - Processing temperature_c batch 20/23
+2026-02-09 16:11:53,345 - SowetoClimatePipeline - INFO - Extracting temperature: 2023-05-14 to 2023-11-10
+2026-02-09 16:12:14,156 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:12:15,161 - SowetoClimatePipeline - INFO - Processing temperature_c batch 21/23
+2026-02-09 16:12:15,161 - SowetoClimatePipeline - INFO - Extracting temperature: 2023-11-10 to 2024-05-08
+2026-02-09 16:12:35,759 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:12:36,766 - SowetoClimatePipeline - INFO - Processing temperature_c batch 22/23
+2026-02-09 16:12:36,767 - SowetoClimatePipeline - INFO - Extracting temperature: 2024-05-08 to 2024-11-04
+2026-02-09 16:13:10,792 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:13:11,794 - SowetoClimatePipeline - INFO - Processing temperature_c batch 23/23
+2026-02-09 16:13:11,794 - SowetoClimatePipeline - INFO - Extracting temperature: 2024-11-04 to 2024-12-31
+2026-02-09 16:13:21,607 - SowetoClimatePipeline - INFO - Extracted 1368 temperature records
+2026-02-09 16:13:22,623 - SowetoClimatePipeline - INFO - Total temperature_c records: 96408
+2026-02-09 16:13:22,624 - SowetoClimatePipeline - INFO - Generated 23 date batches
+2026-02-09 16:13:22,624 - SowetoClimatePipeline - INFO - Processing pm25 batch 1/23
+2026-02-09 16:13:22,624 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-01-01 to 2014-06-30
+2026-02-09 16:13:23,032 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2014-01-01 to 2014-06-30
+2026-02-09 16:13:24,035 - SowetoClimatePipeline - INFO - Processing pm25 batch 2/23
+2026-02-09 16:13:24,035 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-06-30 to 2014-12-27
+2026-02-09 16:13:25,655 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2014-06-30 to 2014-12-27
+2026-02-09 16:13:26,659 - SowetoClimatePipeline - INFO - Processing pm25 batch 3/23
+2026-02-09 16:13:26,659 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-12-27 to 2015-06-25
+2026-02-09 16:13:27,580 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2014-12-27 to 2015-06-25
+2026-02-09 16:13:28,584 - SowetoClimatePipeline - INFO - Processing pm25 batch 4/23
+2026-02-09 16:13:28,584 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2015-06-25 to 2015-12-22
+2026-02-09 16:13:29,590 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2015-06-25 to 2015-12-22
+2026-02-09 16:13:30,591 - SowetoClimatePipeline - INFO - Processing pm25 batch 5/23
+2026-02-09 16:13:30,591 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2015-12-22 to 2016-06-19
+2026-02-09 16:13:32,335 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2015-12-22 to 2016-06-19
+2026-02-09 16:13:33,348 - SowetoClimatePipeline - INFO - Processing pm25 batch 6/23
+2026-02-09 16:13:33,349 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-06-19 to 2016-12-16
+2026-02-09 16:14:45,359 - root - WARNING - GEE error in extract_pm25_batch: Collection query aborted after accumulating over 5000 elements.. Retrying in 5s...
+2026-02-09 16:14:50,365 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-06-19 to 2016-12-16
+2026-02-09 16:14:52,261 - googleapiclient.http - WARNING - Sleeping 0.67 seconds before retry 1 of 5 for request: POST https://earthengine.googleapis.com/v1/projects/joburg-hvi/value:compute?prettyPrint=false&alt=json, after 502
+2026-02-09 16:14:54,446 - googleapiclient.http - WARNING - Sleeping 1.94 seconds before retry 2 of 5 for request: POST https://earthengine.googleapis.com/v1/projects/joburg-hvi/value:compute?prettyPrint=false&alt=json, after 503
+2026-02-09 16:14:57,620 - googleapiclient.http - WARNING - Sleeping 4.61 seconds before retry 3 of 5 for request: POST https://earthengine.googleapis.com/v1/projects/joburg-hvi/value:compute?prettyPrint=false&alt=json, after 503
+2026-02-09 16:15:15,104 - root - WARNING - GEE error in extract_pm25_batch: Collection query aborted after accumulating over 5000 elements.. Retrying in 10s...
+2026-02-09 16:15:25,110 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-06-19 to 2016-12-16
+2026-02-09 16:15:59,307 - SowetoClimatePipeline - ERROR - Failed to process batch 6 for pm25: Collection query aborted after accumulating over 5000 elements.
+2026-02-09 16:15:59,308 - SowetoClimatePipeline - INFO - Processing pm25 batch 7/23
+2026-02-09 16:15:59,308 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-12-16 to 2017-06-14
+2026-02-09 16:17:12,351 - root - WARNING - GEE error in extract_pm25_batch: Collection query aborted after accumulating over 5000 elements.. Retrying in 5s...
+2026-02-09 16:17:17,353 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-12-16 to 2017-06-14
+2026-02-09 16:17:25,333 - root - WARNING - GEE error in extract_pm25_batch: Collection query aborted after accumulating over 5000 elements.. Retrying in 10s...
+2026-02-09 16:17:35,339 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-12-16 to 2017-06-14
+2026-02-09 16:17:46,578 - SowetoClimatePipeline - ERROR - Failed to process batch 7 for pm25: Collection query aborted after accumulating over 5000 elements.
+2026-02-09 16:17:46,578 - SowetoClimatePipeline - INFO - Processing pm25 batch 8/23
+2026-02-09 16:17:46,578 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-06-14 to 2017-12-11
+2026-02-09 16:18:39,953 - root - WARNING - GEE error in extract_pm25_batch: Collection query aborted after accumulating over 5000 elements.. Retrying in 5s...
+2026-02-09 16:18:44,956 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-06-14 to 2017-12-11
+2026-02-09 16:18:58,194 - root - WARNING - GEE error in extract_pm25_batch: Collection query aborted after accumulating over 5000 elements.. Retrying in 10s...
+2026-02-09 16:19:08,197 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-06-14 to 2017-12-11
+2026-02-09 16:19:21,315 - SowetoClimatePipeline - ERROR - Failed to process batch 8 for pm25: Collection query aborted after accumulating over 5000 elements.
+2026-02-09 16:19:21,315 - SowetoClimatePipeline - INFO - Processing pm25 batch 9/23
+2026-02-09 16:19:21,315 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-12-11 to 2018-06-09
+2026-02-09 16:21:48,845 - root - WARNING - GEE error in extract_pm25_batch: Collection query aborted after accumulating over 5000 elements.. Retrying in 5s...
+2026-02-09 16:21:53,852 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-12-11 to 2018-06-09
+2026-02-09 16:22:00,743 - root - WARNING - GEE error in extract_pm25_batch: Collection query aborted after accumulating over 5000 elements.. Retrying in 10s...
+2026-02-09 16:22:10,746 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-12-11 to 2018-06-09
+2026-02-09 16:22:20,666 - SowetoClimatePipeline - ERROR - Failed to process batch 9 for pm25: Collection query aborted after accumulating over 5000 elements.
+2026-02-09 16:22:20,666 - SowetoClimatePipeline - INFO - Processing pm25 batch 10/23
+2026-02-09 16:22:20,666 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2018-06-09 to 2018-12-06
+2026-02-09 16:23:01,225 - root - WARNING - GEE error in extract_pm25_batch: Collection query aborted after accumulating over 5000 elements.. Retrying in 5s...
+2026-02-09 16:23:06,229 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2018-06-09 to 2018-12-06
+2026-02-09 16:23:27,464 - root - WARNING - GEE error in extract_pm25_batch: Collection query aborted after accumulating over 5000 elements.. Retrying in 10s...
+2026-02-09 16:24:30,062 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:24:30,062 - SowetoClimatePipeline - INFO - Soweto Climate Data Extraction Pipeline Initialized
+2026-02-09 16:24:30,062 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:24:30,062 - SowetoClimatePipeline - INFO - Pipeline execution started at 2026-02-09 16:24:30.062562
+2026-02-09 16:24:30,062 - SowetoClimatePipeline - INFO - Initializing pipeline components...
+2026-02-09 16:24:33,775 - SowetoClimatePipeline - INFO - GEE authentication successful (using existing credentials)
+2026-02-09 16:24:33,777 - SowetoClimatePipeline - INFO - Pipeline initialization complete
+2026-02-09 16:24:33,778 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:24:33,778 - SowetoClimatePipeline - INFO - STARTING DATA EXTRACTION
+2026-02-09 16:24:33,778 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 16:24:33,779 - SowetoClimatePipeline - INFO - Generated 23 date batches (6 months each)
+2026-02-09 16:24:33,779 - SowetoClimatePipeline - INFO - Processing temperature_c batch 1/23
+2026-02-09 16:24:33,779 - SowetoClimatePipeline - INFO - Extracting temperature: 2014-01-01 to 2014-06-30
+2026-02-09 16:24:43,514 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:24:44,521 - SowetoClimatePipeline - INFO - Processing temperature_c batch 2/23
+2026-02-09 16:24:44,521 - SowetoClimatePipeline - INFO - Extracting temperature: 2014-06-30 to 2014-12-27
+2026-02-09 16:24:52,198 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:24:53,204 - SowetoClimatePipeline - INFO - Processing temperature_c batch 3/23
+2026-02-09 16:24:53,204 - SowetoClimatePipeline - INFO - Extracting temperature: 2014-12-27 to 2015-06-25
+2026-02-09 16:25:05,987 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:25:06,991 - SowetoClimatePipeline - INFO - Processing temperature_c batch 4/23
+2026-02-09 16:25:06,992 - SowetoClimatePipeline - INFO - Extracting temperature: 2015-06-25 to 2015-12-22
+2026-02-09 16:25:15,028 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:25:16,032 - SowetoClimatePipeline - INFO - Processing temperature_c batch 5/23
+2026-02-09 16:25:16,033 - SowetoClimatePipeline - INFO - Extracting temperature: 2015-12-22 to 2016-06-19
+2026-02-09 16:25:22,200 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:25:23,202 - SowetoClimatePipeline - INFO - Processing temperature_c batch 6/23
+2026-02-09 16:25:23,202 - SowetoClimatePipeline - INFO - Extracting temperature: 2016-06-19 to 2016-12-16
+2026-02-09 16:25:29,429 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:25:30,435 - SowetoClimatePipeline - INFO - Processing temperature_c batch 7/23
+2026-02-09 16:25:30,436 - SowetoClimatePipeline - INFO - Extracting temperature: 2016-12-16 to 2017-06-14
+2026-02-09 16:25:40,312 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:25:41,314 - SowetoClimatePipeline - INFO - Processing temperature_c batch 8/23
+2026-02-09 16:25:41,314 - SowetoClimatePipeline - INFO - Extracting temperature: 2017-06-14 to 2017-12-11
+2026-02-09 16:25:50,983 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:25:51,987 - SowetoClimatePipeline - INFO - Processing temperature_c batch 9/23
+2026-02-09 16:25:51,988 - SowetoClimatePipeline - INFO - Extracting temperature: 2017-12-11 to 2018-06-09
+2026-02-09 16:25:59,889 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:26:00,892 - SowetoClimatePipeline - INFO - Processing temperature_c batch 10/23
+2026-02-09 16:26:00,892 - SowetoClimatePipeline - INFO - Extracting temperature: 2018-06-09 to 2018-12-06
+2026-02-09 16:26:10,925 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:26:11,931 - SowetoClimatePipeline - INFO - Processing temperature_c batch 11/23
+2026-02-09 16:26:11,931 - SowetoClimatePipeline - INFO - Extracting temperature: 2018-12-06 to 2019-06-04
+2026-02-09 16:26:22,509 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:26:23,514 - SowetoClimatePipeline - INFO - Processing temperature_c batch 12/23
+2026-02-09 16:26:23,515 - SowetoClimatePipeline - INFO - Extracting temperature: 2019-06-04 to 2019-12-01
+2026-02-09 16:26:28,649 - googleapiclient.http - WARNING - Sleeping 0.55 seconds before retry 1 of 5 for request: POST https://earthengine.googleapis.com/v1/projects/joburg-hvi/value:compute?prettyPrint=false&alt=json, after 503
+2026-02-09 16:26:36,632 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:26:37,638 - SowetoClimatePipeline - INFO - Processing temperature_c batch 13/23
+2026-02-09 16:26:37,638 - SowetoClimatePipeline - INFO - Extracting temperature: 2019-12-01 to 2020-05-29
+2026-02-09 16:26:45,029 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:26:46,034 - SowetoClimatePipeline - INFO - Processing temperature_c batch 14/23
+2026-02-09 16:26:46,035 - SowetoClimatePipeline - INFO - Extracting temperature: 2020-05-29 to 2020-11-25
+2026-02-09 16:26:58,191 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:26:59,197 - SowetoClimatePipeline - INFO - Processing temperature_c batch 15/23
+2026-02-09 16:26:59,198 - SowetoClimatePipeline - INFO - Extracting temperature: 2020-11-25 to 2021-05-24
+2026-02-09 16:27:25,311 - googleapiclient.http - WARNING - Sleeping 1.99 seconds before retry 1 of 5 for request: POST https://earthengine.googleapis.com/v1/projects/joburg-hvi/value:compute?prettyPrint=false&alt=json, after 503
+2026-02-09 16:27:40,385 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:27:41,387 - SowetoClimatePipeline - INFO - Processing temperature_c batch 16/23
+2026-02-09 16:27:41,387 - SowetoClimatePipeline - INFO - Extracting temperature: 2021-05-24 to 2021-11-20
+2026-02-09 16:27:50,404 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:27:51,410 - SowetoClimatePipeline - INFO - Processing temperature_c batch 17/23
+2026-02-09 16:27:51,410 - SowetoClimatePipeline - INFO - Extracting temperature: 2021-11-20 to 2022-05-19
+2026-02-09 16:28:01,553 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:28:02,558 - SowetoClimatePipeline - INFO - Processing temperature_c batch 18/23
+2026-02-09 16:28:02,558 - SowetoClimatePipeline - INFO - Extracting temperature: 2022-05-19 to 2022-11-15
+2026-02-09 16:28:14,201 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:28:15,204 - SowetoClimatePipeline - INFO - Processing temperature_c batch 19/23
+2026-02-09 16:28:15,205 - SowetoClimatePipeline - INFO - Extracting temperature: 2022-11-15 to 2023-05-14
+2026-02-09 16:28:30,101 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:28:31,107 - SowetoClimatePipeline - INFO - Processing temperature_c batch 20/23
+2026-02-09 16:28:31,107 - SowetoClimatePipeline - INFO - Extracting temperature: 2023-05-14 to 2023-11-10
+2026-02-09 16:28:41,992 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:28:42,995 - SowetoClimatePipeline - INFO - Processing temperature_c batch 21/23
+2026-02-09 16:28:42,996 - SowetoClimatePipeline - INFO - Extracting temperature: 2023-11-10 to 2024-05-08
+2026-02-09 16:28:50,523 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:28:51,528 - SowetoClimatePipeline - INFO - Processing temperature_c batch 22/23
+2026-02-09 16:28:51,528 - SowetoClimatePipeline - INFO - Extracting temperature: 2024-05-08 to 2024-11-04
+2026-02-09 16:28:58,658 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-09 16:28:59,664 - SowetoClimatePipeline - INFO - Processing temperature_c batch 23/23
+2026-02-09 16:28:59,665 - SowetoClimatePipeline - INFO - Extracting temperature: 2024-11-04 to 2024-12-31
+2026-02-09 16:29:03,577 - SowetoClimatePipeline - INFO - Extracted 1368 temperature records
+2026-02-09 16:29:04,596 - SowetoClimatePipeline - INFO - Total temperature_c records: 96408
+2026-02-09 16:29:04,597 - SowetoClimatePipeline - INFO - Generated 67 date batches (2 months each)
+2026-02-09 16:29:04,597 - SowetoClimatePipeline - INFO - Processing pm25 batch 1/67
+2026-02-09 16:29:04,597 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-01-01 to 2014-03-02
+2026-02-09 16:29:06,098 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2014-01-01 to 2014-03-02
+2026-02-09 16:29:07,105 - SowetoClimatePipeline - INFO - Processing pm25 batch 2/67
+2026-02-09 16:29:07,105 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-03-02 to 2014-05-01
+2026-02-09 16:29:07,589 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2014-03-02 to 2014-05-01
+2026-02-09 16:29:08,591 - SowetoClimatePipeline - INFO - Processing pm25 batch 3/67
+2026-02-09 16:29:08,591 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-05-01 to 2014-06-30
+2026-02-09 16:29:09,023 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2014-05-01 to 2014-06-30
+2026-02-09 16:29:10,025 - SowetoClimatePipeline - INFO - Processing pm25 batch 4/67
+2026-02-09 16:29:10,026 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-06-30 to 2014-08-29
+2026-02-09 16:29:10,445 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2014-06-30 to 2014-08-29
+2026-02-09 16:29:11,452 - SowetoClimatePipeline - INFO - Processing pm25 batch 5/67
+2026-02-09 16:29:11,452 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-08-29 to 2014-10-28
+2026-02-09 16:29:11,880 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2014-08-29 to 2014-10-28
+2026-02-09 16:29:12,886 - SowetoClimatePipeline - INFO - Processing pm25 batch 6/67
+2026-02-09 16:29:12,886 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-10-28 to 2014-12-27
+2026-02-09 16:29:13,221 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2014-10-28 to 2014-12-27
+2026-02-09 16:29:14,223 - SowetoClimatePipeline - INFO - Processing pm25 batch 7/67
+2026-02-09 16:29:14,224 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-12-27 to 2015-02-25
+2026-02-09 16:29:14,710 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2014-12-27 to 2015-02-25
+2026-02-09 16:29:15,716 - SowetoClimatePipeline - INFO - Processing pm25 batch 8/67
+2026-02-09 16:29:15,716 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2015-02-25 to 2015-04-26
+2026-02-09 16:29:16,279 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2015-02-25 to 2015-04-26
+2026-02-09 16:29:17,285 - SowetoClimatePipeline - INFO - Processing pm25 batch 9/67
+2026-02-09 16:29:17,286 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2015-04-26 to 2015-06-25
+2026-02-09 16:29:17,776 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2015-04-26 to 2015-06-25
+2026-02-09 16:29:18,782 - SowetoClimatePipeline - INFO - Processing pm25 batch 10/67
+2026-02-09 16:29:18,782 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2015-06-25 to 2015-08-24
+2026-02-09 16:29:19,723 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2015-06-25 to 2015-08-24
+2026-02-09 16:29:20,727 - SowetoClimatePipeline - INFO - Processing pm25 batch 11/67
+2026-02-09 16:29:20,727 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2015-08-24 to 2015-10-23
+2026-02-09 16:29:21,264 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2015-08-24 to 2015-10-23
+2026-02-09 16:29:22,267 - SowetoClimatePipeline - INFO - Processing pm25 batch 12/67
+2026-02-09 16:29:22,268 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2015-10-23 to 2015-12-22
+2026-02-09 16:29:22,693 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2015-10-23 to 2015-12-22
+2026-02-09 16:29:23,699 - SowetoClimatePipeline - INFO - Processing pm25 batch 13/67
+2026-02-09 16:29:23,699 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2015-12-22 to 2016-02-20
+2026-02-09 16:29:24,105 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2015-12-22 to 2016-02-20
+2026-02-09 16:29:25,107 - SowetoClimatePipeline - INFO - Processing pm25 batch 14/67
+2026-02-09 16:29:25,107 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-02-20 to 2016-04-20
+2026-02-09 16:29:25,677 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2016-02-20 to 2016-04-20
+2026-02-09 16:29:26,681 - SowetoClimatePipeline - INFO - Processing pm25 batch 15/67
+2026-02-09 16:29:26,681 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-04-20 to 2016-06-19
+2026-02-09 16:29:27,091 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2016-04-20 to 2016-06-19
+2026-02-09 16:29:28,096 - SowetoClimatePipeline - INFO - Processing pm25 batch 16/67
+2026-02-09 16:29:28,097 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-06-19 to 2016-08-18
+2026-02-09 16:29:32,251 - SowetoClimatePipeline - INFO - Extracted 2967 PM2.5 records
+2026-02-09 16:29:33,254 - SowetoClimatePipeline - INFO - Processing pm25 batch 17/67
+2026-02-09 16:29:33,254 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-08-18 to 2016-10-17
+2026-02-09 16:29:50,941 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:29:51,947 - SowetoClimatePipeline - INFO - Processing pm25 batch 18/67
+2026-02-09 16:29:51,948 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-10-17 to 2016-12-16
+2026-02-09 16:30:42,117 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:30:43,124 - SowetoClimatePipeline - INFO - Processing pm25 batch 19/67
+2026-02-09 16:30:43,125 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-12-16 to 2017-02-14
+2026-02-09 16:31:18,115 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:31:19,121 - SowetoClimatePipeline - INFO - Processing pm25 batch 20/67
+2026-02-09 16:31:19,122 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-02-14 to 2017-04-15
+2026-02-09 16:31:51,256 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:31:52,262 - SowetoClimatePipeline - INFO - Processing pm25 batch 21/67
+2026-02-09 16:31:52,262 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-04-15 to 2017-06-14
+2026-02-09 16:32:27,887 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:32:28,890 - SowetoClimatePipeline - INFO - Processing pm25 batch 22/67
+2026-02-09 16:32:28,890 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-06-14 to 2017-08-13
+2026-02-09 16:32:35,904 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:32:36,910 - SowetoClimatePipeline - INFO - Processing pm25 batch 23/67
+2026-02-09 16:32:36,911 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-08-13 to 2017-10-12
+2026-02-09 16:33:12,689 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:33:13,695 - SowetoClimatePipeline - INFO - Processing pm25 batch 24/67
+2026-02-09 16:33:13,695 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-10-12 to 2017-12-11
+2026-02-09 16:33:49,301 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:33:50,309 - SowetoClimatePipeline - INFO - Processing pm25 batch 25/67
+2026-02-09 16:33:50,309 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-12-11 to 2018-02-09
+2026-02-09 16:33:59,080 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:34:00,082 - SowetoClimatePipeline - INFO - Processing pm25 batch 26/67
+2026-02-09 16:34:00,082 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2018-02-09 to 2018-04-10
+2026-02-09 16:34:26,671 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:34:27,677 - SowetoClimatePipeline - INFO - Processing pm25 batch 27/67
+2026-02-09 16:34:27,677 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2018-04-10 to 2018-06-09
+2026-02-09 16:35:03,193 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:35:04,199 - SowetoClimatePipeline - INFO - Processing pm25 batch 28/67
+2026-02-09 16:35:04,199 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2018-06-09 to 2018-08-08
+2026-02-09 16:35:15,186 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:35:16,193 - SowetoClimatePipeline - INFO - Processing pm25 batch 29/67
+2026-02-09 16:35:16,193 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2018-08-08 to 2018-10-07
+2026-02-09 16:35:42,948 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:35:43,953 - SowetoClimatePipeline - INFO - Processing pm25 batch 30/67
+2026-02-09 16:35:43,953 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2018-10-07 to 2018-12-06
+2026-02-09 16:36:15,477 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:36:16,484 - SowetoClimatePipeline - INFO - Processing pm25 batch 31/67
+2026-02-09 16:36:16,485 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2018-12-06 to 2019-02-04
+2026-02-09 16:36:47,610 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:36:48,615 - SowetoClimatePipeline - INFO - Processing pm25 batch 32/67
+2026-02-09 16:36:48,615 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2019-02-04 to 2019-04-05
+2026-02-09 16:37:18,109 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:37:19,112 - SowetoClimatePipeline - INFO - Processing pm25 batch 33/67
+2026-02-09 16:37:19,112 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2019-04-05 to 2019-06-04
+2026-02-09 16:37:46,605 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:37:47,610 - SowetoClimatePipeline - INFO - Processing pm25 batch 34/67
+2026-02-09 16:37:47,611 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2019-06-04 to 2019-08-03
+2026-02-09 16:38:14,549 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:38:15,553 - SowetoClimatePipeline - INFO - Processing pm25 batch 35/67
+2026-02-09 16:38:15,553 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2019-08-03 to 2019-10-02
+2026-02-09 16:38:41,230 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:38:42,237 - SowetoClimatePipeline - INFO - Processing pm25 batch 36/67
+2026-02-09 16:38:42,237 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2019-10-02 to 2019-12-01
+2026-02-09 16:39:06,825 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:39:07,828 - SowetoClimatePipeline - INFO - Processing pm25 batch 37/67
+2026-02-09 16:39:07,829 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2019-12-01 to 2020-01-30
+2026-02-09 16:39:44,391 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:39:45,397 - SowetoClimatePipeline - INFO - Processing pm25 batch 38/67
+2026-02-09 16:39:45,397 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2020-01-30 to 2020-03-30
+2026-02-09 16:40:12,015 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:40:13,021 - SowetoClimatePipeline - INFO - Processing pm25 batch 39/67
+2026-02-09 16:40:13,022 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2020-03-30 to 2020-05-29
+2026-02-09 16:40:39,839 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:40:40,845 - SowetoClimatePipeline - INFO - Processing pm25 batch 40/67
+2026-02-09 16:40:40,845 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2020-05-29 to 2020-07-28
+2026-02-09 16:41:07,953 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:41:08,960 - SowetoClimatePipeline - INFO - Processing pm25 batch 41/67
+2026-02-09 16:41:08,960 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2020-07-28 to 2020-09-26
+2026-02-09 16:41:37,677 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:41:38,683 - SowetoClimatePipeline - INFO - Processing pm25 batch 42/67
+2026-02-09 16:41:38,683 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2020-09-26 to 2020-11-25
+2026-02-09 16:42:05,008 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:42:06,013 - SowetoClimatePipeline - INFO - Processing pm25 batch 43/67
+2026-02-09 16:42:06,013 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2020-11-25 to 2021-01-24
+2026-02-09 16:42:41,928 - SowetoClimatePipeline - INFO - Extracted 4880 PM2.5 records
+2026-02-09 16:42:42,934 - SowetoClimatePipeline - INFO - Processing pm25 batch 44/67
+2026-02-09 16:42:42,935 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2021-01-24 to 2021-03-25
+2026-02-09 16:43:19,368 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:43:20,373 - SowetoClimatePipeline - INFO - Processing pm25 batch 45/67
+2026-02-09 16:43:20,374 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2021-03-25 to 2021-05-24
+2026-02-09 16:43:56,302 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:43:57,306 - SowetoClimatePipeline - INFO - Processing pm25 batch 46/67
+2026-02-09 16:43:57,306 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2021-05-24 to 2021-07-23
+2026-02-09 16:44:32,862 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:44:33,867 - SowetoClimatePipeline - INFO - Processing pm25 batch 47/67
+2026-02-09 16:44:33,868 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2021-07-23 to 2021-09-21
+2026-02-09 16:45:12,763 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:45:13,765 - SowetoClimatePipeline - INFO - Processing pm25 batch 48/67
+2026-02-09 16:45:13,766 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2021-09-21 to 2021-11-20
+2026-02-09 16:46:05,641 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:46:06,646 - SowetoClimatePipeline - INFO - Processing pm25 batch 49/67
+2026-02-09 16:46:06,646 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2021-11-20 to 2022-01-19
+2026-02-09 16:46:47,459 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:46:48,463 - SowetoClimatePipeline - INFO - Processing pm25 batch 50/67
+2026-02-09 16:46:48,464 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2022-01-19 to 2022-03-20
+2026-02-09 16:47:31,946 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:47:32,952 - SowetoClimatePipeline - INFO - Processing pm25 batch 51/67
+2026-02-09 16:47:32,952 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2022-03-20 to 2022-05-19
+2026-02-09 16:48:15,573 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:48:16,575 - SowetoClimatePipeline - INFO - Processing pm25 batch 52/67
+2026-02-09 16:48:16,576 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2022-05-19 to 2022-07-18
+2026-02-09 16:49:01,421 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:49:02,427 - SowetoClimatePipeline - INFO - Processing pm25 batch 53/67
+2026-02-09 16:49:02,428 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2022-07-18 to 2022-09-16
+2026-02-09 16:49:45,356 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:49:46,362 - SowetoClimatePipeline - INFO - Processing pm25 batch 54/67
+2026-02-09 16:49:46,362 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2022-09-16 to 2022-11-15
+2026-02-09 16:50:30,308 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:50:31,314 - SowetoClimatePipeline - INFO - Processing pm25 batch 55/67
+2026-02-09 16:50:31,314 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2022-11-15 to 2023-01-14
+2026-02-09 16:51:15,820 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:51:16,827 - SowetoClimatePipeline - INFO - Processing pm25 batch 56/67
+2026-02-09 16:51:16,827 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2023-01-14 to 2023-03-15
+2026-02-09 16:52:00,715 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:52:01,721 - SowetoClimatePipeline - INFO - Processing pm25 batch 57/67
+2026-02-09 16:52:01,722 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2023-03-15 to 2023-05-14
+2026-02-09 16:52:43,294 - root - WARNING - GEE error in extract_pm25_batch: Error in map(ID=20230512T00F000):
+Image.reduceRegion: The 'geometry' parameter is at least partly outside the selected projection's area of validity.. Retrying in 5s...
+2026-02-09 16:52:48,297 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2023-03-15 to 2023-05-14
+2026-02-09 16:52:55,537 - root - WARNING - GEE error in extract_pm25_batch: Error in map(ID=20230512T00F000):
+Image.reduceRegion: The 'geometry' parameter is at least partly outside the selected projection's area of validity.. Retrying in 10s...
+2026-02-09 16:53:05,541 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2023-03-15 to 2023-05-14
+2026-02-09 16:53:10,779 - SowetoClimatePipeline - ERROR - Failed to process batch 57 for pm25: Error in map(ID=20230512T00F000):
+Image.reduceRegion: The 'geometry' parameter is at least partly outside the selected projection's area of validity.
+2026-02-09 16:53:10,779 - SowetoClimatePipeline - INFO - Processing pm25 batch 58/67
+2026-02-09 16:53:10,779 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2023-05-14 to 2023-07-13
+2026-02-09 16:53:53,528 - SowetoClimatePipeline - INFO - Extracted 4913 PM2.5 records
+2026-02-09 16:53:54,533 - SowetoClimatePipeline - INFO - Processing pm25 batch 59/67
+2026-02-09 16:53:54,534 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2023-07-13 to 2023-09-11
+2026-02-09 16:54:35,497 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:54:36,502 - SowetoClimatePipeline - INFO - Processing pm25 batch 60/67
+2026-02-09 16:54:36,502 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2023-09-11 to 2023-11-10
+2026-02-09 16:55:14,590 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:55:15,594 - SowetoClimatePipeline - INFO - Processing pm25 batch 61/67
+2026-02-09 16:55:15,595 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2023-11-10 to 2024-01-09
+2026-02-09 16:55:57,971 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:55:58,978 - SowetoClimatePipeline - INFO - Processing pm25 batch 62/67
+2026-02-09 16:55:58,978 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2024-01-09 to 2024-03-09
+2026-02-09 16:56:38,689 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:56:39,690 - SowetoClimatePipeline - INFO - Processing pm25 batch 63/67
+2026-02-09 16:56:39,691 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2024-03-09 to 2024-05-08
+2026-02-09 16:57:23,982 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:57:24,984 - SowetoClimatePipeline - INFO - Processing pm25 batch 64/67
+2026-02-09 16:57:24,984 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2024-05-08 to 2024-07-07
+2026-02-09 16:58:05,618 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:58:06,624 - SowetoClimatePipeline - INFO - Processing pm25 batch 65/67
+2026-02-09 16:58:06,625 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2024-07-07 to 2024-09-05
+2026-02-09 16:58:46,993 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:58:47,999 - SowetoClimatePipeline - INFO - Processing pm25 batch 66/67
+2026-02-09 16:58:48,000 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2024-09-05 to 2024-11-04
+2026-02-09 16:59:25,930 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-09 16:59:26,936 - SowetoClimatePipeline - INFO - Processing pm25 batch 67/67
+2026-02-09 16:59:26,936 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2024-11-04 to 2024-12-31
+2026-02-09 17:00:06,291 - SowetoClimatePipeline - INFO - Extracted 4654 PM2.5 records
+2026-02-09 17:00:07,313 - SowetoClimatePipeline - INFO - Total pm25 records: 248654
+2026-02-09 17:00:07,316 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 17:00:07,316 - SowetoClimatePipeline - INFO - PERFORMING QUALITY CHECKS
+2026-02-09 17:00:07,316 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 17:00:07,316 - SowetoClimatePipeline - INFO - Performing quality checks for temperature_c
+2026-02-09 17:00:07,324 - SowetoClimatePipeline - INFO - Quality check for temperature_c: PASSED
+2026-02-09 17:00:07,324 - SowetoClimatePipeline - INFO -   Records: 96408, Missing: 0.00%, Outliers: 0
+2026-02-09 17:00:07,324 - SowetoClimatePipeline - INFO - Performing quality checks for pm25
+2026-02-09 17:00:07,336 - SowetoClimatePipeline - INFO - Quality check for pm25: PASSED
+2026-02-09 17:00:07,337 - SowetoClimatePipeline - INFO -   Records: 248654, Missing: 0.23%, Outliers: 18127
+2026-02-09 17:00:07,337 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 17:00:07,337 - SowetoClimatePipeline - INFO - COMPUTING STATISTICAL AGGREGATIONS
+2026-02-09 17:00:07,337 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 17:00:07,337 - SowetoClimatePipeline - INFO - Computing monthly statistics for temperature_c
+2026-02-09 17:00:07,416 - SowetoClimatePipeline - INFO - Computing seasonal statistics for temperature_c
+2026-02-09 17:00:08,255 - SowetoClimatePipeline - INFO - Computing annual statistics for temperature_c
+2026-02-09 17:00:08,266 - SowetoClimatePipeline - INFO - Computing monthly statistics for pm25
+2026-02-09 17:00:08,336 - SowetoClimatePipeline - INFO - Computing seasonal statistics for pm25
+2026-02-09 17:00:10,347 - SowetoClimatePipeline - INFO - Computing annual statistics for pm25
+2026-02-09 17:00:10,369 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 17:00:10,369 - SowetoClimatePipeline - INFO - SAVING RESULTS
+2026-02-09 17:00:10,369 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 17:00:10,477 - SowetoClimatePipeline - INFO - Saved temperature raw data: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/soweto_temperature_raw.csv
+2026-02-09 17:00:10,754 - SowetoClimatePipeline - INFO - Saved PM2.5 raw data: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/soweto_pm25_raw.csv
+2026-02-09 17:00:10,755 - SowetoClimatePipeline - INFO - Saved temp_monthly aggregations: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/soweto_temp_monthly_stats.csv
+2026-02-09 17:00:10,756 - SowetoClimatePipeline - INFO - Saved temp_seasonal aggregations: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/soweto_temp_seasonal_stats.csv
+2026-02-09 17:00:10,756 - SowetoClimatePipeline - INFO - Saved temp_annual aggregations: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/soweto_temp_annual_stats.csv
+2026-02-09 17:00:10,757 - SowetoClimatePipeline - INFO - Saved pm25_monthly aggregations: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/soweto_pm25_monthly_stats.csv
+2026-02-09 17:00:10,757 - SowetoClimatePipeline - INFO - Saved pm25_seasonal aggregations: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/soweto_pm25_seasonal_stats.csv
+2026-02-09 17:00:10,758 - SowetoClimatePipeline - INFO - Saved pm25_annual aggregations: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/soweto_pm25_annual_stats.csv
+2026-02-09 17:00:10,758 - SowetoClimatePipeline - INFO - Saved quality report: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/quality_report.json
+2026-02-09 17:00:10,758 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 17:00:10,758 - SowetoClimatePipeline - INFO - PIPELINE EXECUTION COMPLETE
+2026-02-09 17:00:10,758 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-09 17:00:10,758 - SowetoClimatePipeline - INFO - Duration: 0:35:40.696331
+2026-02-09 17:00:10,758 - SowetoClimatePipeline - INFO - Temperature records: 96408
+2026-02-09 17:00:10,758 - SowetoClimatePipeline - INFO - PM2.5 records: 248654
+2026-02-09 17:00:10,758 - SowetoClimatePipeline - INFO - Output directory: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output
+2026-02-09 17:00:10,758 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-11 12:26:54,989 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-11 12:26:54,989 - SowetoClimatePipeline - INFO - Soweto Climate Data Extraction Pipeline Initialized
+2026-02-11 12:26:54,989 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-11 12:26:54,989 - SowetoClimatePipeline - INFO - Pipeline execution started at 2026-02-11 12:26:54.989961
+2026-02-11 12:26:54,989 - SowetoClimatePipeline - INFO - Initializing pipeline components...
+2026-02-11 12:26:58,682 - SowetoClimatePipeline - INFO - GEE authentication successful (using existing credentials)
+2026-02-11 12:26:58,683 - SowetoClimatePipeline - INFO - Pipeline initialization complete
+2026-02-11 12:26:58,683 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-11 12:26:58,683 - SowetoClimatePipeline - INFO - STARTING DATA EXTRACTION
+2026-02-11 12:26:58,683 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-11 12:26:58,684 - SowetoClimatePipeline - INFO - Generated 23 date batches (6 months each)
+2026-02-11 12:26:58,684 - SowetoClimatePipeline - INFO - Processing temperature_c batch 1/23
+2026-02-11 12:26:58,684 - SowetoClimatePipeline - INFO - Extracting temperature: 2014-01-01 to 2014-06-30
+2026-02-11 12:27:07,346 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:27:08,349 - SowetoClimatePipeline - INFO - Processing temperature_c batch 2/23
+2026-02-11 12:27:08,350 - SowetoClimatePipeline - INFO - Extracting temperature: 2014-06-30 to 2014-12-27
+2026-02-11 12:27:13,733 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:27:14,737 - SowetoClimatePipeline - INFO - Processing temperature_c batch 3/23
+2026-02-11 12:27:14,738 - SowetoClimatePipeline - INFO - Extracting temperature: 2014-12-27 to 2015-06-25
+2026-02-11 12:27:24,845 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:27:25,853 - SowetoClimatePipeline - INFO - Processing temperature_c batch 4/23
+2026-02-11 12:27:25,854 - SowetoClimatePipeline - INFO - Extracting temperature: 2015-06-25 to 2015-12-22
+2026-02-11 12:27:30,245 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:27:31,251 - SowetoClimatePipeline - INFO - Processing temperature_c batch 5/23
+2026-02-11 12:27:31,251 - SowetoClimatePipeline - INFO - Extracting temperature: 2015-12-22 to 2016-06-19
+2026-02-11 12:27:35,601 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:27:36,608 - SowetoClimatePipeline - INFO - Processing temperature_c batch 6/23
+2026-02-11 12:27:36,608 - SowetoClimatePipeline - INFO - Extracting temperature: 2016-06-19 to 2016-12-16
+2026-02-11 12:27:46,115 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:27:47,121 - SowetoClimatePipeline - INFO - Processing temperature_c batch 7/23
+2026-02-11 12:27:47,121 - SowetoClimatePipeline - INFO - Extracting temperature: 2016-12-16 to 2017-06-14
+2026-02-11 12:27:53,912 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:27:54,917 - SowetoClimatePipeline - INFO - Processing temperature_c batch 8/23
+2026-02-11 12:27:54,917 - SowetoClimatePipeline - INFO - Extracting temperature: 2017-06-14 to 2017-12-11
+2026-02-11 12:28:03,478 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:28:04,485 - SowetoClimatePipeline - INFO - Processing temperature_c batch 9/23
+2026-02-11 12:28:04,485 - SowetoClimatePipeline - INFO - Extracting temperature: 2017-12-11 to 2018-06-09
+2026-02-11 12:28:10,396 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:28:11,400 - SowetoClimatePipeline - INFO - Processing temperature_c batch 10/23
+2026-02-11 12:28:11,400 - SowetoClimatePipeline - INFO - Extracting temperature: 2018-06-09 to 2018-12-06
+2026-02-11 12:28:19,050 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:28:20,058 - SowetoClimatePipeline - INFO - Processing temperature_c batch 11/23
+2026-02-11 12:28:20,058 - SowetoClimatePipeline - INFO - Extracting temperature: 2018-12-06 to 2019-06-04
+2026-02-11 12:28:25,621 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:28:26,626 - SowetoClimatePipeline - INFO - Processing temperature_c batch 12/23
+2026-02-11 12:28:26,627 - SowetoClimatePipeline - INFO - Extracting temperature: 2019-06-04 to 2019-12-01
+2026-02-11 12:28:35,081 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:28:36,086 - SowetoClimatePipeline - INFO - Processing temperature_c batch 13/23
+2026-02-11 12:28:36,087 - SowetoClimatePipeline - INFO - Extracting temperature: 2019-12-01 to 2020-05-29
+2026-02-11 12:28:45,205 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:28:46,208 - SowetoClimatePipeline - INFO - Processing temperature_c batch 14/23
+2026-02-11 12:28:46,209 - SowetoClimatePipeline - INFO - Extracting temperature: 2020-05-29 to 2020-11-25
+2026-02-11 12:28:51,693 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:28:52,700 - SowetoClimatePipeline - INFO - Processing temperature_c batch 15/23
+2026-02-11 12:28:52,701 - SowetoClimatePipeline - INFO - Extracting temperature: 2020-11-25 to 2021-05-24
+2026-02-11 12:29:01,520 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:29:02,525 - SowetoClimatePipeline - INFO - Processing temperature_c batch 16/23
+2026-02-11 12:29:02,526 - SowetoClimatePipeline - INFO - Extracting temperature: 2021-05-24 to 2021-11-20
+2026-02-11 12:29:09,934 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:29:10,940 - SowetoClimatePipeline - INFO - Processing temperature_c batch 17/23
+2026-02-11 12:29:10,940 - SowetoClimatePipeline - INFO - Extracting temperature: 2021-11-20 to 2022-05-19
+2026-02-11 12:29:15,581 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:29:16,588 - SowetoClimatePipeline - INFO - Processing temperature_c batch 18/23
+2026-02-11 12:29:16,588 - SowetoClimatePipeline - INFO - Extracting temperature: 2022-05-19 to 2022-11-15
+2026-02-11 12:29:21,603 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:29:22,609 - SowetoClimatePipeline - INFO - Processing temperature_c batch 19/23
+2026-02-11 12:29:22,609 - SowetoClimatePipeline - INFO - Extracting temperature: 2022-11-15 to 2023-05-14
+2026-02-11 12:29:30,480 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:29:31,482 - SowetoClimatePipeline - INFO - Processing temperature_c batch 20/23
+2026-02-11 12:29:31,482 - SowetoClimatePipeline - INFO - Extracting temperature: 2023-05-14 to 2023-11-10
+2026-02-11 12:29:37,274 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:29:38,278 - SowetoClimatePipeline - INFO - Processing temperature_c batch 21/23
+2026-02-11 12:29:38,279 - SowetoClimatePipeline - INFO - Extracting temperature: 2023-11-10 to 2024-05-08
+2026-02-11 12:29:44,442 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:29:45,449 - SowetoClimatePipeline - INFO - Processing temperature_c batch 22/23
+2026-02-11 12:29:45,449 - SowetoClimatePipeline - INFO - Extracting temperature: 2024-05-08 to 2024-11-04
+2026-02-11 12:29:53,493 - SowetoClimatePipeline - INFO - Extracted 4320 temperature records
+2026-02-11 12:29:54,499 - SowetoClimatePipeline - INFO - Processing temperature_c batch 23/23
+2026-02-11 12:29:54,499 - SowetoClimatePipeline - INFO - Extracting temperature: 2024-11-04 to 2024-12-31
+2026-02-11 12:29:57,991 - SowetoClimatePipeline - INFO - Extracted 1368 temperature records
+2026-02-11 12:29:59,008 - SowetoClimatePipeline - INFO - Total temperature_c records: 96408
+2026-02-11 12:29:59,009 - SowetoClimatePipeline - INFO - Generated 67 date batches (2 months each)
+2026-02-11 12:29:59,009 - SowetoClimatePipeline - INFO - Processing pm25 batch 1/67
+2026-02-11 12:29:59,009 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-01-01 to 2014-03-02
+2026-02-11 12:29:59,428 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2014-01-01 to 2014-03-02
+2026-02-11 12:30:00,431 - SowetoClimatePipeline - INFO - Processing pm25 batch 2/67
+2026-02-11 12:30:00,431 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-03-02 to 2014-05-01
+2026-02-11 12:30:00,830 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2014-03-02 to 2014-05-01
+2026-02-11 12:30:01,836 - SowetoClimatePipeline - INFO - Processing pm25 batch 3/67
+2026-02-11 12:30:01,837 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-05-01 to 2014-06-30
+2026-02-11 12:30:02,336 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2014-05-01 to 2014-06-30
+2026-02-11 12:30:03,343 - SowetoClimatePipeline - INFO - Processing pm25 batch 4/67
+2026-02-11 12:30:03,343 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-06-30 to 2014-08-29
+2026-02-11 12:30:03,792 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2014-06-30 to 2014-08-29
+2026-02-11 12:30:04,798 - SowetoClimatePipeline - INFO - Processing pm25 batch 5/67
+2026-02-11 12:30:04,799 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-08-29 to 2014-10-28
+2026-02-11 12:30:05,286 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2014-08-29 to 2014-10-28
+2026-02-11 12:30:06,291 - SowetoClimatePipeline - INFO - Processing pm25 batch 6/67
+2026-02-11 12:30:06,293 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-10-28 to 2014-12-27
+2026-02-11 12:30:06,841 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2014-10-28 to 2014-12-27
+2026-02-11 12:30:07,846 - SowetoClimatePipeline - INFO - Processing pm25 batch 7/67
+2026-02-11 12:30:07,847 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2014-12-27 to 2015-02-25
+2026-02-11 12:30:08,296 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2014-12-27 to 2015-02-25
+2026-02-11 12:30:09,299 - SowetoClimatePipeline - INFO - Processing pm25 batch 8/67
+2026-02-11 12:30:09,299 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2015-02-25 to 2015-04-26
+2026-02-11 12:30:09,753 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2015-02-25 to 2015-04-26
+2026-02-11 12:30:10,757 - SowetoClimatePipeline - INFO - Processing pm25 batch 9/67
+2026-02-11 12:30:10,758 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2015-04-26 to 2015-06-25
+2026-02-11 12:30:11,287 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2015-04-26 to 2015-06-25
+2026-02-11 12:30:12,291 - SowetoClimatePipeline - INFO - Processing pm25 batch 10/67
+2026-02-11 12:30:12,291 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2015-06-25 to 2015-08-24
+2026-02-11 12:30:12,715 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2015-06-25 to 2015-08-24
+2026-02-11 12:30:13,721 - SowetoClimatePipeline - INFO - Processing pm25 batch 11/67
+2026-02-11 12:30:13,721 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2015-08-24 to 2015-10-23
+2026-02-11 12:30:14,151 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2015-08-24 to 2015-10-23
+2026-02-11 12:30:15,157 - SowetoClimatePipeline - INFO - Processing pm25 batch 12/67
+2026-02-11 12:30:15,157 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2015-10-23 to 2015-12-22
+2026-02-11 12:30:16,140 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2015-10-23 to 2015-12-22
+2026-02-11 12:30:17,147 - SowetoClimatePipeline - INFO - Processing pm25 batch 13/67
+2026-02-11 12:30:17,147 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2015-12-22 to 2016-02-20
+2026-02-11 12:30:18,515 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2015-12-22 to 2016-02-20
+2026-02-11 12:30:19,518 - SowetoClimatePipeline - INFO - Processing pm25 batch 14/67
+2026-02-11 12:30:19,518 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-02-20 to 2016-04-20
+2026-02-11 12:30:19,937 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2016-02-20 to 2016-04-20
+2026-02-11 12:30:20,941 - SowetoClimatePipeline - INFO - Processing pm25 batch 15/67
+2026-02-11 12:30:20,944 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-04-20 to 2016-06-19
+2026-02-11 12:30:21,429 - SowetoClimatePipeline - WARNING - No PM2.5 data returned for 2016-04-20 to 2016-06-19
+2026-02-11 12:30:22,436 - SowetoClimatePipeline - INFO - Processing pm25 batch 16/67
+2026-02-11 12:30:22,436 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-06-19 to 2016-08-18
+2026-02-11 12:30:25,562 - SowetoClimatePipeline - INFO - Extracted 2967 PM2.5 records
+2026-02-11 12:30:26,569 - SowetoClimatePipeline - INFO - Processing pm25 batch 17/67
+2026-02-11 12:30:26,569 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-08-18 to 2016-10-17
+2026-02-11 12:30:30,710 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:30:31,715 - SowetoClimatePipeline - INFO - Processing pm25 batch 18/67
+2026-02-11 12:30:31,716 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-10-17 to 2016-12-16
+2026-02-11 12:30:36,407 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:30:37,412 - SowetoClimatePipeline - INFO - Processing pm25 batch 19/67
+2026-02-11 12:30:37,412 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2016-12-16 to 2017-02-14
+2026-02-11 12:30:43,714 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:30:44,720 - SowetoClimatePipeline - INFO - Processing pm25 batch 20/67
+2026-02-11 12:30:44,721 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-02-14 to 2017-04-15
+2026-02-11 12:30:51,874 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:30:52,880 - SowetoClimatePipeline - INFO - Processing pm25 batch 21/67
+2026-02-11 12:30:52,881 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-04-15 to 2017-06-14
+2026-02-11 12:30:56,293 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:30:57,299 - SowetoClimatePipeline - INFO - Processing pm25 batch 22/67
+2026-02-11 12:30:57,300 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-06-14 to 2017-08-13
+2026-02-11 12:31:00,454 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:31:01,461 - SowetoClimatePipeline - INFO - Processing pm25 batch 23/67
+2026-02-11 12:31:01,462 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-08-13 to 2017-10-12
+2026-02-11 12:31:05,420 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:31:06,425 - SowetoClimatePipeline - INFO - Processing pm25 batch 24/67
+2026-02-11 12:31:06,427 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-10-12 to 2017-12-11
+2026-02-11 12:31:13,829 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:31:14,830 - SowetoClimatePipeline - INFO - Processing pm25 batch 25/67
+2026-02-11 12:31:14,830 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2017-12-11 to 2018-02-09
+2026-02-11 12:31:22,636 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:31:23,638 - SowetoClimatePipeline - INFO - Processing pm25 batch 26/67
+2026-02-11 12:31:23,638 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2018-02-09 to 2018-04-10
+2026-02-11 12:31:28,639 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:31:29,641 - SowetoClimatePipeline - INFO - Processing pm25 batch 27/67
+2026-02-11 12:31:29,641 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2018-04-10 to 2018-06-09
+2026-02-11 12:31:33,781 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:31:34,786 - SowetoClimatePipeline - INFO - Processing pm25 batch 28/67
+2026-02-11 12:31:34,787 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2018-06-09 to 2018-08-08
+2026-02-11 12:31:41,047 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:31:42,052 - SowetoClimatePipeline - INFO - Processing pm25 batch 29/67
+2026-02-11 12:31:42,052 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2018-08-08 to 2018-10-07
+2026-02-11 12:31:49,085 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:31:50,092 - SowetoClimatePipeline - INFO - Processing pm25 batch 30/67
+2026-02-11 12:31:50,092 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2018-10-07 to 2018-12-06
+2026-02-11 12:31:57,023 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:31:58,029 - SowetoClimatePipeline - INFO - Processing pm25 batch 31/67
+2026-02-11 12:31:58,029 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2018-12-06 to 2019-02-04
+2026-02-11 12:32:04,536 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:32:05,542 - SowetoClimatePipeline - INFO - Processing pm25 batch 32/67
+2026-02-11 12:32:05,543 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2019-02-04 to 2019-04-05
+2026-02-11 12:32:08,850 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:32:09,851 - SowetoClimatePipeline - INFO - Processing pm25 batch 33/67
+2026-02-11 12:32:09,852 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2019-04-05 to 2019-06-04
+2026-02-11 12:32:13,762 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:32:14,764 - SowetoClimatePipeline - INFO - Processing pm25 batch 34/67
+2026-02-11 12:32:14,764 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2019-06-04 to 2019-08-03
+2026-02-11 12:32:20,910 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:32:21,916 - SowetoClimatePipeline - INFO - Processing pm25 batch 35/67
+2026-02-11 12:32:21,916 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2019-08-03 to 2019-10-02
+2026-02-11 12:32:26,515 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:32:27,521 - SowetoClimatePipeline - INFO - Processing pm25 batch 36/67
+2026-02-11 12:32:27,521 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2019-10-02 to 2019-12-01
+2026-02-11 12:32:31,086 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:32:32,091 - SowetoClimatePipeline - INFO - Processing pm25 batch 37/67
+2026-02-11 12:32:32,091 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2019-12-01 to 2020-01-30
+2026-02-11 12:32:38,358 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:32:39,361 - SowetoClimatePipeline - INFO - Processing pm25 batch 38/67
+2026-02-11 12:32:39,362 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2020-01-30 to 2020-03-30
+2026-02-11 12:32:46,489 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:32:47,495 - SowetoClimatePipeline - INFO - Processing pm25 batch 39/67
+2026-02-11 12:32:47,495 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2020-03-30 to 2020-05-29
+2026-02-11 12:32:52,598 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:32:53,604 - SowetoClimatePipeline - INFO - Processing pm25 batch 40/67
+2026-02-11 12:32:53,605 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2020-05-29 to 2020-07-28
+2026-02-11 12:32:57,618 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:32:58,624 - SowetoClimatePipeline - INFO - Processing pm25 batch 41/67
+2026-02-11 12:32:58,624 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2020-07-28 to 2020-09-26
+2026-02-11 12:33:06,503 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:33:07,506 - SowetoClimatePipeline - INFO - Processing pm25 batch 42/67
+2026-02-11 12:33:07,506 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2020-09-26 to 2020-11-25
+2026-02-11 12:33:10,934 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:33:11,936 - SowetoClimatePipeline - INFO - Processing pm25 batch 43/67
+2026-02-11 12:33:11,937 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2020-11-25 to 2021-01-24
+2026-02-11 12:33:19,283 - SowetoClimatePipeline - INFO - Extracted 4880 PM2.5 records
+2026-02-11 12:33:20,287 - SowetoClimatePipeline - INFO - Processing pm25 batch 44/67
+2026-02-11 12:33:20,287 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2021-01-24 to 2021-03-25
+2026-02-11 12:33:28,667 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:33:29,674 - SowetoClimatePipeline - INFO - Processing pm25 batch 45/67
+2026-02-11 12:33:29,674 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2021-03-25 to 2021-05-24
+2026-02-11 12:33:34,811 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:33:35,815 - SowetoClimatePipeline - INFO - Processing pm25 batch 46/67
+2026-02-11 12:33:35,815 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2021-05-24 to 2021-07-23
+2026-02-11 12:33:40,769 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:33:41,772 - SowetoClimatePipeline - INFO - Processing pm25 batch 47/67
+2026-02-11 12:33:41,773 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2021-07-23 to 2021-09-21
+2026-02-11 12:33:50,435 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:33:51,445 - SowetoClimatePipeline - INFO - Processing pm25 batch 48/67
+2026-02-11 12:33:51,446 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2021-09-21 to 2021-11-20
+2026-02-11 12:33:55,793 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:33:56,798 - SowetoClimatePipeline - INFO - Processing pm25 batch 49/67
+2026-02-11 12:33:56,799 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2021-11-20 to 2022-01-19
+2026-02-11 12:34:04,950 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:34:05,956 - SowetoClimatePipeline - INFO - Processing pm25 batch 50/67
+2026-02-11 12:34:05,957 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2022-01-19 to 2022-03-20
+2026-02-11 12:34:11,305 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:34:12,311 - SowetoClimatePipeline - INFO - Processing pm25 batch 51/67
+2026-02-11 12:34:12,311 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2022-03-20 to 2022-05-19
+2026-02-11 12:34:17,929 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:34:18,934 - SowetoClimatePipeline - INFO - Processing pm25 batch 52/67
+2026-02-11 12:34:18,934 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2022-05-19 to 2022-07-18
+2026-02-11 12:34:28,039 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:34:29,045 - SowetoClimatePipeline - INFO - Processing pm25 batch 53/67
+2026-02-11 12:34:29,046 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2022-07-18 to 2022-09-16
+2026-02-11 12:34:36,369 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:34:37,374 - SowetoClimatePipeline - INFO - Processing pm25 batch 54/67
+2026-02-11 12:34:37,374 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2022-09-16 to 2022-11-15
+2026-02-11 12:34:45,178 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:34:46,183 - SowetoClimatePipeline - INFO - Processing pm25 batch 55/67
+2026-02-11 12:34:46,183 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2022-11-15 to 2023-01-14
+2026-02-11 12:34:50,920 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:34:51,926 - SowetoClimatePipeline - INFO - Processing pm25 batch 56/67
+2026-02-11 12:34:51,926 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2023-01-14 to 2023-03-15
+2026-02-11 12:34:59,776 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:35:00,782 - SowetoClimatePipeline - INFO - Processing pm25 batch 57/67
+2026-02-11 12:35:00,782 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2023-03-15 to 2023-05-14
+2026-02-11 12:35:04,473 - root - WARNING - GEE error in extract_pm25_batch: Error in map(ID=20230512T00F000):
+Image.reduceRegion: The 'geometry' parameter is at least partly outside the selected projection's area of validity.. Retrying in 5s...
+2026-02-11 12:35:09,478 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2023-03-15 to 2023-05-14
+2026-02-11 12:35:14,676 - root - WARNING - GEE error in extract_pm25_batch: Error in map(ID=20230512T00F000):
+Image.reduceRegion: The 'geometry' parameter is at least partly outside the selected projection's area of validity.. Retrying in 10s...
+2026-02-11 12:35:24,679 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2023-03-15 to 2023-05-14
+2026-02-11 12:35:32,673 - SowetoClimatePipeline - ERROR - Failed to process batch 57 for pm25: Error in map(ID=20230512T00F000):
+Image.reduceRegion: The 'geometry' parameter is at least partly outside the selected projection's area of validity.
+2026-02-11 12:35:32,673 - SowetoClimatePipeline - INFO - Processing pm25 batch 58/67
+2026-02-11 12:35:32,673 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2023-05-14 to 2023-07-13
+2026-02-11 12:35:40,153 - SowetoClimatePipeline - INFO - Extracted 4913 PM2.5 records
+2026-02-11 12:35:41,158 - SowetoClimatePipeline - INFO - Processing pm25 batch 59/67
+2026-02-11 12:35:41,160 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2023-07-13 to 2023-09-11
+2026-02-11 12:35:49,736 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:35:50,742 - SowetoClimatePipeline - INFO - Processing pm25 batch 60/67
+2026-02-11 12:35:50,742 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2023-09-11 to 2023-11-10
+2026-02-11 12:35:56,700 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:35:57,704 - SowetoClimatePipeline - INFO - Processing pm25 batch 61/67
+2026-02-11 12:35:57,705 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2023-11-10 to 2024-01-09
+2026-02-11 12:36:08,893 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:36:09,900 - SowetoClimatePipeline - INFO - Processing pm25 batch 62/67
+2026-02-11 12:36:09,901 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2024-01-09 to 2024-03-09
+2026-02-11 12:36:13,800 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:36:14,806 - SowetoClimatePipeline - INFO - Processing pm25 batch 63/67
+2026-02-11 12:36:14,807 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2024-03-09 to 2024-05-08
+2026-02-11 12:36:22,892 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:36:23,899 - SowetoClimatePipeline - INFO - Processing pm25 batch 64/67
+2026-02-11 12:36:23,899 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2024-05-08 to 2024-07-07
+2026-02-11 12:36:30,252 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:36:31,258 - SowetoClimatePipeline - INFO - Processing pm25 batch 65/67
+2026-02-11 12:36:31,259 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2024-07-07 to 2024-09-05
+2026-02-11 12:36:39,632 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:36:40,637 - SowetoClimatePipeline - INFO - Processing pm25 batch 66/67
+2026-02-11 12:36:40,637 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2024-09-05 to 2024-11-04
+2026-02-11 12:36:45,629 - SowetoClimatePipeline - INFO - Extracted 4920 PM2.5 records
+2026-02-11 12:36:46,635 - SowetoClimatePipeline - INFO - Processing pm25 batch 67/67
+2026-02-11 12:36:46,635 - SowetoClimatePipeline - INFO - Extracting PM2.5: 2024-11-04 to 2024-12-31
+2026-02-11 12:36:54,770 - SowetoClimatePipeline - INFO - Extracted 4654 PM2.5 records
+2026-02-11 12:36:55,797 - SowetoClimatePipeline - INFO - Total pm25 records: 248654
+2026-02-11 12:36:55,798 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-11 12:36:55,798 - SowetoClimatePipeline - INFO - PERFORMING QUALITY CHECKS
+2026-02-11 12:36:55,798 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-11 12:36:55,798 - SowetoClimatePipeline - INFO - Performing quality checks for temperature_c
+2026-02-11 12:36:55,807 - SowetoClimatePipeline - INFO - Quality check for temperature_c: PASSED
+2026-02-11 12:36:55,807 - SowetoClimatePipeline - INFO -   Records: 96408, Missing: 0.00%, Outliers: 0
+2026-02-11 12:36:55,807 - SowetoClimatePipeline - INFO - Performing quality checks for pm25
+2026-02-11 12:36:55,817 - SowetoClimatePipeline - INFO - Quality check for pm25: PASSED
+2026-02-11 12:36:55,818 - SowetoClimatePipeline - INFO -   Records: 248654, Missing: 0.23%, Outliers: 18127
+2026-02-11 12:36:55,818 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-11 12:36:55,818 - SowetoClimatePipeline - INFO - COMPUTING STATISTICAL AGGREGATIONS
+2026-02-11 12:36:55,818 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-11 12:36:55,818 - SowetoClimatePipeline - INFO - Computing monthly statistics for temperature_c
+2026-02-11 12:36:55,894 - SowetoClimatePipeline - INFO - Computing seasonal statistics for temperature_c
+2026-02-11 12:36:56,718 - SowetoClimatePipeline - INFO - Computing annual statistics for temperature_c
+2026-02-11 12:36:56,729 - SowetoClimatePipeline - INFO - Computing monthly statistics for pm25
+2026-02-11 12:36:56,792 - SowetoClimatePipeline - INFO - Computing seasonal statistics for pm25
+2026-02-11 12:36:58,818 - SowetoClimatePipeline - INFO - Computing annual statistics for pm25
+2026-02-11 12:36:58,840 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-11 12:36:58,840 - SowetoClimatePipeline - INFO - SAVING RESULTS
+2026-02-11 12:36:58,840 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-11 12:36:58,960 - SowetoClimatePipeline - INFO - Saved temperature raw data: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/soweto_temperature_raw.csv
+2026-02-11 12:36:59,270 - SowetoClimatePipeline - INFO - Saved PM2.5 raw data: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/soweto_pm25_raw.csv
+2026-02-11 12:36:59,272 - SowetoClimatePipeline - INFO - Saved temp_monthly aggregations: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/soweto_temp_monthly_stats.csv
+2026-02-11 12:36:59,273 - SowetoClimatePipeline - INFO - Saved temp_seasonal aggregations: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/soweto_temp_seasonal_stats.csv
+2026-02-11 12:36:59,274 - SowetoClimatePipeline - INFO - Saved temp_annual aggregations: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/soweto_temp_annual_stats.csv
+2026-02-11 12:36:59,275 - SowetoClimatePipeline - INFO - Saved pm25_monthly aggregations: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/soweto_pm25_monthly_stats.csv
+2026-02-11 12:36:59,276 - SowetoClimatePipeline - INFO - Saved pm25_seasonal aggregations: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/soweto_pm25_seasonal_stats.csv
+2026-02-11 12:36:59,276 - SowetoClimatePipeline - INFO - Saved pm25_annual aggregations: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/soweto_pm25_annual_stats.csv
+2026-02-11 12:36:59,277 - SowetoClimatePipeline - INFO - Saved quality report: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output/quality_report.json
+2026-02-11 12:36:59,277 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-11 12:36:59,277 - SowetoClimatePipeline - INFO - PIPELINE EXECUTION COMPLETE
+2026-02-11 12:36:59,277 - SowetoClimatePipeline - INFO - ================================================================================
+2026-02-11 12:36:59,277 - SowetoClimatePipeline - INFO - Duration: 0:10:04.287101
+2026-02-11 12:36:59,277 - SowetoClimatePipeline - INFO - Temperature records: 96408
+2026-02-11 12:36:59,277 - SowetoClimatePipeline - INFO - PM2.5 records: 248654
+2026-02-11 12:36:59,277 - SowetoClimatePipeline - INFO - Output directory: /Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output
+2026-02-11 12:36:59,277 - SowetoClimatePipeline - INFO - ================================================================================

@@ -1,0 +1,57 @@
+{
+  "investigation_date": "2026-02-11",
+  "critical_finding": "UNIT CONVERSION ERROR IDENTIFIED",
+  "issue_description": "CAMS NRT PM2.5 data is in kg/m\u00b3 but was not converted to \u03bcg/m\u00b3",
+  "conversion_factor": 1000000000.0,
+  "corrected_values": {
+    "2016": 14.772142979925812,
+    "2017": 102.27970906377078,
+    "2018": 106.65839770802492,
+    "2019": 62.11953780726879,
+    "2020": 24.935446995165186
+  },
+  "actual_high_years": [
+    2017,
+    2018
+  ],
+  "2019_is_anomaly": false,
+  "2019_vs_baseline": {
+    "2019_mean_ugm3": 62.11953780726879,
+    "baseline_mean_ugm3": 26.372666665228063,
+    "ratio": 2.355451520917769
+  },
+  "2017_2018_explanation": {
+    "2017_mean_ugm3": 102.27970906377078,
+    "2018_mean_ugm3": 106.65839770802492,
+    "ratio_to_baseline": [
+      3.8782467606366455,
+      4.044278080102241
+    ],
+    "peak_months": {
+      "2017": "May-July (autumn/winter)",
+      "2018": "April-June (autumn/early winter)"
+    }
+  },
+  "who_guideline_comparison": {
+    "who_annual_guideline_ugm3": 5.0,
+    "years_exceeding": [
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ]
+  },
+  "recommendations": [
+    "URGENT: Apply unit conversion (multiply all PM2.5 values by 10^9)",
+    "Update pipeline code to convert kg/m\u00b3 to \u03bcg/m\u00b3",
+    "Re-run all PM2.5 analyses with corrected units",
+    "Investigate 2017-2018 elevated values (likely real environmental events)",
+    "Consider additional validation with ground station data if available",
+    "Document unit conversion in all future analyses"
+  ]
+}
