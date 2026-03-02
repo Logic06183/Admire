@@ -1,0 +1,45 @@
+{
+  "validation_date": "2026-03-02T12:23:48.541445",
+  "status": "WARNING",
+  "summary": {
+    "passed": 22,
+    "warnings": 7,
+    "errors": 0
+  },
+  "details": {
+    "passed": [
+      "Temperature raw data exists: soweto_temperature_raw.csv",
+      "PM2.5 raw data exists: soweto_pm25_raw.csv",
+      "Temperature monthly stats exists: soweto_temp_monthly_stats.csv",
+      "Temperature seasonal stats exists: soweto_temp_seasonal_stats.csv",
+      "Temperature annual stats exists: soweto_temp_annual_stats.csv",
+      "PM2.5 monthly stats exists: soweto_pm25_monthly_stats.csv",
+      "PM2.5 seasonal stats exists: soweto_pm25_seasonal_stats.csv",
+      "PM2.5 annual stats exists: soweto_pm25_annual_stats.csv",
+      "Quality report exists: quality_report.json",
+      "Pipeline log exists: soweto_climate_extraction.log",
+      "All data files loaded successfully",
+      "Temperature: Start date coverage OK",
+      "Temperature: No missing values",
+      "Temperature: Values within reasonable range",
+      "PM2.5: No negative values",
+      "Temperature: No significant time gaps",
+      "temperature_c: Statistical consistency OK",
+      "pm25: Statistical consistency OK",
+      "Temperature records: 96,408",
+      "PM2.5 records: 248,654",
+      "Temperature: Record count reasonable",
+      "PM2.5: Record count reasonable"
+    ],
+    "warnings": [
+      "Temperature: Data ends early (2024-12-30 23:00:00 vs 2024-12-31 00:00:00)",
+      "PM2.5: Data starts late (2016-06-22 12:00:00 vs 2014-01-01 00:00:00)",
+      "PM2.5: Data ends early (2024-12-30 21:00:00 vs 2024-12-31 00:00:00)",
+      "PM2.5: 0.23% missing values (574/248654)",
+      "PM2.5: Extremely high value found (1280.78 \u00b5g/m\u00b3)",
+      "PM2.5: 1 time gaps > 0 days 12:00:00",
+      "PM2.5: 8/9 years exceed WHO annual guideline"
+    ],
+    "errors": []
+  }
+}

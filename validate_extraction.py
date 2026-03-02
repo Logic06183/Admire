@@ -15,8 +15,10 @@ import json
 import sys
 from datetime import datetime
 
+from soweto_climate_pipeline import PipelineConfig
+
 # Configuration
-DATA_DIR = Path('/Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output')
+DATA_DIR = PipelineConfig().OUTPUT_DIR
 EXPECTED_START = '2014-01-01'
 EXPECTED_END = '2024-12-31'
 

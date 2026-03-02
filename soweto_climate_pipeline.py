@@ -15,62 +15,70 @@ Version: 1.0.0
 """
 
 import ee
-import geemap
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
 import logging
 import json
-import os
 from pathlib import Path
 from typing import Dict, List, Tuple, Optional
 import time
 from functools import wraps
+from dataclasses import dataclass, field
 
 # ============================================================================
 # CONFIGURATION
 # ============================================================================
 
+@dataclass(frozen=True)
 class PipelineConfig:
     """Centralized configuration for the climate data pipeline."""
 
     # Location Configuration
-    SOWETO_LAT = -26.2678
-    SOWETO_LON = 27.8585
-    BUFFER_DISTANCE = 5000  # 5km buffer for spatial averaging (meters)
+    SOWETO_LAT: float = -26.2678
+    SOWETO_LON: float = 27.8585
+    BUFFER_DISTANCE: int = 5000  # meters
 
     # Temporal Configuration
-    START_DATE = '2014-01-01'
-    END_DATE = '2024-12-31'
+    START_DATE: str = '2014-01-01'
+    END_DATE: str = '2024-12-31'
 
     # Data Source Configuration
-    TEMPERATURE_COLLECTION = 'ECMWF/ERA5_LAND/HOURLY'
-    TEMPERATURE_BAND = 'temperature_2m'
-    TEMPERATURE_SCALE = 11132  # ERA5-Land native resolution (meters)
+    TEMPERATURE_COLLECTION: str = 'ECMWF/ERA5_LAND/HOURLY'
+    TEMPERATURE_BAND: str = 'temperature_2m'
+    TEMPERATURE_SCALE: int = 11132
 
-    # PM2.5 Configuration
-    # Using CAMS Global Reanalysis (EAC4)
-    PM25_COLLECTION = 'ECMWF/CAMS/NRT'
-    PM25_BAND = 'particulate_matter_d_less_than_25_um_surface'
-    PM25_SCALE = 40000  # CAMS native resolution (meters)
+    # PM2.5 Configuration (CAMS Global Reanalysis)
+    PM25_COLLECTION: str = 'ECMWF/CAMS/NRT'
+    PM25_BAND: str = 'particulate_matter_d_less_than_25_um_surface'
+    PM25_SCALE: int = 40000
 
     # Processing Configuration
-    BATCH_SIZE_MONTHS = 6  # Process 6 months at a time for temperature
-    PM25_BATCH_SIZE_MONTHS = 2  # Process 2 months at a time for PM2.5 (smaller batches to avoid GEE limits)
-    MAX_RETRIES = 3
-    RETRY_DELAY = 5  # seconds
+    BATCH_SIZE_MONTHS: int = 6
+    PM25_BATCH_SIZE_MONTHS: int = 2
+    MAX_RETRIES: int = 3
+    RETRY_DELAY: int = 5
 
     # Output Configuration
-    OUTPUT_DIR = Path('/Users/craig/Library/Mobile Documents/com~apple~CloudDocs/Admire/climate_data_output')
-    LOG_FILE = 'soweto_climate_extraction.log'
+    OUTPUT_DIR: Path = field(
+        default_factory=lambda: Path(__file__).resolve().parent / 'climate_data_output'
+    )
+    LOG_FILE: str = 'soweto_climate_extraction.log'
 
     # Seasonal Definitions (Southern Hemisphere)
-    SEASONS = {
-        'Summer': [12, 1, 2],  # DJF
-        'Autumn': [3, 4, 5],   # MAM
-        'Winter': [6, 7, 8],   # JJA
-        'Spring': [9, 10, 11]  # SON
-    }
+    SEASONS: Dict[str, List[int]] = field(default_factory=lambda: {
+        'Summer': [12, 1, 2],
+        'Autumn': [3, 4, 5],
+        'Winter': [6, 7, 8],
+        'Spring': [9, 10, 11]
+    })
+
+    # Verification windows to ensure the pipeline talks to live GEE datasets
+    DATASET_VERIFICATION_WINDOWS: Dict[str, Tuple[str, str]] = field(default_factory=lambda: {
+        'temperature': ('2014-01-01', '2014-01-07'),
+        # CAMS NRT has reliable coverage later in the record
+        'pm25': ('2018-01-01', '2018-01-07')
+    })
 
 # ============================================================================
 # LOGGING SETUP
@@ -176,6 +184,32 @@ class GEEAuthenticator:
             except Exception as auth_error:
                 logger.error(f"GEE authentication failed: {auth_error}")
                 return False
+
+    @staticmethod
+    def verify_collection_access(
+        collection_id: str,
+        start: str,
+        end: str,
+        logger: logging.Logger
+    ) -> bool:
+        """Ensure a target collection returns live data within a sample window."""
+        try:
+            collection = ee.ImageCollection(collection_id).filterDate(start, end)
+            image_count = collection.size().getInfo()
+
+            if image_count == 0:
+                logger.error(
+                    f"Verification failed for {collection_id}: no imagery between {start} and {end}"
+                )
+                return False
+
+            logger.info(
+                f"Verified {collection_id} contains {image_count} images between {start} and {end}"
+            )
+            return True
+        except ee.EEException as e:
+            logger.error(f"Failed to verify collection {collection_id}: {e}")
+            return False
 
 # ============================================================================
 # DATA EXTRACTION
@@ -423,7 +457,12 @@ class StatisticalAggregator:
             f'{column}_median': df[column].median(),
             f'{column}_q25': df[column].quantile(0.25),
             f'{column}_q75': df[column].quantile(0.75),
+            f'{column}_q10': df[column].quantile(0.10),
+            f'{column}_q90': df[column].quantile(0.90),
             f'{column}_iqr': df[column].quantile(0.75) - df[column].quantile(0.25),
+            f'{column}_std': df[column].std(ddof=0),
+            f'{column}_min': df[column].min(),
+            f'{column}_max': df[column].max(),
             f'{column}_count': df[column].count()
         }
 
@@ -436,7 +475,8 @@ class StatisticalAggregator:
         df['month'] = df['date'].dt.month
 
         monthly_stats = df.groupby(['year', 'month']).apply(
-            lambda x: pd.Series(self.compute_statistics(x, variable))
+            lambda x: pd.Series(self.compute_statistics(x, variable)),
+            include_groups=False
         ).reset_index()
 
         return monthly_stats
@@ -466,7 +506,8 @@ class StatisticalAggregator:
         )
 
         seasonal_stats = df.groupby(['season_year', 'season']).apply(
-            lambda x: pd.Series(self.compute_statistics(x, variable))
+            lambda x: pd.Series(self.compute_statistics(x, variable)),
+            include_groups=False
         ).reset_index()
 
         return seasonal_stats
@@ -479,7 +520,8 @@ class StatisticalAggregator:
         df['year'] = df['date'].dt.year
 
         annual_stats = df.groupby('year').apply(
-            lambda x: pd.Series(self.compute_statistics(x, variable))
+            lambda x: pd.Series(self.compute_statistics(x, variable)),
+            include_groups=False
         ).reset_index()
 
         return annual_stats
@@ -569,6 +611,23 @@ class ClimatePipeline:
         authenticator = GEEAuthenticator()
         if not authenticator.authenticate(self.logger):
             self.logger.error("Failed to authenticate with GEE")
+            return False
+
+        # Verify we can talk to the real datasets before extracting anything
+        verification_windows = self.config.DATASET_VERIFICATION_WINDOWS
+        temp_ok = authenticator.verify_collection_access(
+            self.config.TEMPERATURE_COLLECTION,
+            *verification_windows['temperature'],
+            logger=self.logger
+        )
+        pm25_ok = authenticator.verify_collection_access(
+            self.config.PM25_COLLECTION,
+            *verification_windows['pm25'],
+            logger=self.logger
+        )
+
+        if not (temp_ok and pm25_ok):
+            self.logger.error("Aborting: failed to verify live access to one or more collections")
             return False
 
         # Initialize components
@@ -668,6 +727,30 @@ class ClimatePipeline:
         self.logger.info("SAVING RESULTS")
         self.logger.info("="*80)
 
+        def save_minmax_view(name: str, df: pd.DataFrame):
+            """Save a compact table with min/max (and percentile context) for Admire."""
+            min_col = next((col for col in df.columns if col.endswith('_min')), None)
+            max_col = next((col for col in df.columns if col.endswith('_max')), None)
+
+            if not (min_col and max_col):
+                return
+
+            context_cols = [col for col in ['year', 'season_year', 'season', 'month'] if col in df.columns]
+            extra_cols = [
+                col for col in df.columns
+                if col.endswith(('_q10', '_q90', '_median', '_mean'))
+            ]
+
+            minmax_df = df[context_cols + extra_cols + [min_col, max_col]].copy()
+            minmax_df = minmax_df.rename(columns={
+                min_col: 'min_value',
+                max_col: 'max_value'
+            })
+
+            out_path = self.config.OUTPUT_DIR / f'soweto_{name}_minmax.csv'
+            minmax_df.to_csv(out_path, index=False)
+            self.logger.info(f"Saved {name} min/max summary: {out_path}")
+
         # Save raw data
         if not temp_data.empty:
             temp_path = self.config.OUTPUT_DIR / 'soweto_temperature_raw.csv'
@@ -684,6 +767,7 @@ class ClimatePipeline:
             agg_path = self.config.OUTPUT_DIR / f'soweto_{name}_stats.csv'
             df.to_csv(agg_path, index=False)
             self.logger.info(f"Saved {name} aggregations: {agg_path}")
+            save_minmax_view(name, df)
 
         # Save quality reports
         qc_report = {
