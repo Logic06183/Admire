@@ -27,3 +27,6 @@ Thumbs.db
 *-credentials.json
 service-account*.json
 gee-credentials*.json
+
+# Geo cache (auto-fetched on demand by analysis/figure2_map.py)
+climate_data_output/_geo_cache/
