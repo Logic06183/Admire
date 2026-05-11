@@ -1,0 +1,131 @@
+{
+  "audit_date": "2026-05-11T09:16:07.674433Z",
+  "summary": {
+    "passed": 11,
+    "warned": 1,
+    "failed": 0
+  },
+  "checks": [
+    {
+      "level": "PASS",
+      "check": "auth",
+      "message": "ee.Initialize() succeeded",
+      "details": {}
+    },
+    {
+      "level": "PASS",
+      "check": "collection_access[temperature]",
+      "message": "ECMWF/ERA5_LAND/HOURLY returned 168 images for 2020-01-01..08",
+      "details": {}
+    },
+    {
+      "level": "PASS",
+      "check": "collection_access[pm25]",
+      "message": "ECMWF/CAMS/NRT returned 574 images for 2020-01-01..08",
+      "details": {}
+    },
+    {
+      "level": "PASS",
+      "check": "native_scale[temperature]",
+      "message": "configured scale matches native resolution (~)",
+      "details": {
+        "native_scale_m": 11131.9,
+        "configured_scale_m": 11132,
+        "ratio_configured_over_native": 1.0,
+        "band": "temperature_2m"
+      }
+    },
+    {
+      "level": "PASS",
+      "check": "native_scale[pm25]",
+      "message": "configured scale matches native resolution (~)",
+      "details": {
+        "native_scale_m": 44453.3,
+        "configured_scale_m": 40000,
+        "ratio_configured_over_native": 0.9,
+        "band": "particulate_matter_d_less_than_25_um_surface"
+      }
+    },
+    {
+      "level": "PASS",
+      "check": "coords",
+      "message": "configured point lies inside Soweto OSM bounding box",
+      "details": {
+        "configured_lat": -26.2678,
+        "configured_lon": 27.8585,
+        "soweto_bbox_(s,n,w,e)": [
+          -26.3431,
+          -26.1903,
+          27.7783,
+          27.9476
+        ],
+        "inside_bbox": true
+      }
+    },
+    {
+      "level": "PASS",
+      "check": "units[temperature]",
+      "message": "raw in K, conversion plausible",
+      "details": {
+        "raw_band_value": 290.957,
+        "celsius_value": 17.807,
+        "date_sampled": "2024-01-15 00:00 UTC"
+      }
+    },
+    {
+      "level": "PASS",
+      "check": "units[pm25]",
+      "message": "raw in kg/m3, conversion plausible",
+      "details": {
+        "raw_band_value_kg_m3": 1.3311132640581036e-08,
+        "converted_ug_m3": 13.311,
+        "date_sampled": "2023-06-01 first image"
+      }
+    },
+    {
+      "level": "WARN",
+      "check": "cross_check[pm25]",
+      "message": "no CAMS EAC4 reanalysis product accessible in this GEE catalog \u2014 cannot independently cross-check the 2017-2018 elevation. The report should caveat NRT-only PM2.5 history.",
+      "details": {
+        "candidates_tried": [
+          "ECMWF/CAMS/EAC4/HOURLY",
+          "ECMWF/CAMS/EAC4",
+          "ECMWF/CAMS/CAMS_REANALYSIS_HOURLY"
+        ]
+      }
+    },
+    {
+      "level": "PASS",
+      "check": "repro[temperature]",
+      "message": "reproduces exactly (max abs diff 3.55e-15 K)",
+      "details": {
+        "n_compared": 168,
+        "median_abs_diff": 0.0
+      }
+    },
+    {
+      "level": "PASS",
+      "check": "csv[soweto_temperature_raw.csv]",
+      "message": "96,408 rows, 0 null, min -3.76, max 36.72",
+      "details": {
+        "col": "temperature_c",
+        "expected_range": [
+          -15.0,
+          50.0
+        ]
+      }
+    },
+    {
+      "level": "PASS",
+      "check": "csv[soweto_pm25_raw.csv]",
+      "message": "248,654 rows, 574 null, min 0.00, max 1280.78",
+      "details": {
+        "col": "pm25",
+        "expected_range": [
+          0.0,
+          2000.0
+        ]
+      }
+    }
+  ]
+}

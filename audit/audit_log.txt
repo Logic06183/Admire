@@ -1,0 +1,37 @@
+[PASS] auth: ee.Initialize() succeeded
+[PASS] collection_access[temperature]: ECMWF/ERA5_LAND/HOURLY returned 168 images for 2020-01-01..08
+[PASS] collection_access[pm25]: ECMWF/CAMS/NRT returned 574 images for 2020-01-01..08
+[PASS] native_scale[temperature]: configured scale matches native resolution (~)
+        native_scale_m: 11131.9
+        configured_scale_m: 11132
+        ratio_configured_over_native: 1.0
+        band: temperature_2m
+[PASS] native_scale[pm25]: configured scale matches native resolution (~)
+        native_scale_m: 44453.3
+        configured_scale_m: 40000
+        ratio_configured_over_native: 0.9
+        band: particulate_matter_d_less_than_25_um_surface
+[PASS] coords: configured point lies inside Soweto OSM bounding box
+        configured_lat: -26.2678
+        configured_lon: 27.8585
+        soweto_bbox_(s,n,w,e): (-26.3431, -26.1903, 27.7783, 27.9476)
+        inside_bbox: True
+[PASS] units[temperature]: raw in K, conversion plausible
+        raw_band_value: 290.957
+        celsius_value: 17.807
+        date_sampled: 2024-01-15 00:00 UTC
+[PASS] units[pm25]: raw in kg/m3, conversion plausible
+        raw_band_value_kg_m3: 1.3311132640581036e-08
+        converted_ug_m3: 13.311
+        date_sampled: 2023-06-01 first image
+[WARN] cross_check[pm25]: no CAMS EAC4 reanalysis product accessible in this GEE catalog — cannot independently cross-check the 2017-2018 elevation. The report should caveat NRT-only PM2.5 history.
+        candidates_tried: ['ECMWF/CAMS/EAC4/HOURLY', 'ECMWF/CAMS/EAC4', 'ECMWF/CAMS/CAMS_REANALYSIS_HOURLY']
+[PASS] repro[temperature]: reproduces exactly (max abs diff 3.55e-15 K)
+        n_compared: 168
+        median_abs_diff: 0.0
+[PASS] csv[soweto_temperature_raw.csv]: 96,408 rows, 0 null, min -3.76, max 36.72
+        col: temperature_c
+        expected_range: [-15.0, 50.0]
+[PASS] csv[soweto_pm25_raw.csv]: 248,654 rows, 574 null, min 0.00, max 1280.78
+        col: pm25
+        expected_range: [0.0, 2000.0]
