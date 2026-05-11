@@ -44,36 +44,26 @@ DATA_DIR = REPO_ROOT / "climate_data_output"
 FIG_DIR = REPO_ROOT / "figures"
 FIG_DIR.mkdir(exist_ok=True)
 
-# --- Visual style ---------------------------------------------------------
-# Print-quality, colorblind-friendly, sans-serif font widely available
-# across platforms (so the SVG round-trips into Figma without surprises).
-mpl.rcParams.update({
-    "font.family": "sans-serif",
-    "font.sans-serif": ["Helvetica", "Arial", "DejaVu Sans"],
-    "font.size": 9,
-    "axes.titlesize": 10,
-    "axes.titleweight": "bold",
-    "axes.labelsize": 9,
-    "xtick.labelsize": 8,
-    "ytick.labelsize": 8,
-    "legend.fontsize": 8,
-    "axes.spines.top": False,
-    "axes.spines.right": False,
-    "axes.linewidth": 0.8,
-    "xtick.major.width": 0.8,
-    "ytick.major.width": 0.8,
-    "lines.linewidth": 1.4,
-    "svg.fonttype": "none",  # keep text as text in SVG (editable in Figma)
-})
+# Lancet house style: muted palette + Lancet red as the emphasis colour,
+# bold panel letters in the top-left, italic data-source footer below.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lancet_style import (  # noqa: E402
+    apply_lancet_rcparams,
+    panel_letter,
+    source_footer,
+    COL_LANCET_RED, COL_LANCET_BLUE, COL_INK,
+    COL_GREY_DARK, COL_GREY_MID, COL_GREY_LIGHT, COL_GREY_FAINT,
+    COL_PM25, COL_AOD,
+)
 
-# Colour palette — Okabe-Ito (colorblind-safe), used for max/min and AQ.
-COL_TMAX = "#D55E00"     # vermilion
-COL_TMIN = "#0072B2"     # blue
-COL_MEAN = "#000000"
-COL_PM25 = "#CC79A7"     # reddish purple
-COL_AOD = "#009E73"      # bluish green
-COL_WHO = "#999999"
-COL_BAND = "#888888"
+apply_lancet_rcparams()
+
+# Series-specific colour assignments (mapped to the Lancet palette)
+COL_TMAX = COL_LANCET_RED
+COL_TMIN = COL_LANCET_BLUE
+COL_MEAN = COL_INK
+COL_WHO = COL_GREY_DARK
+COL_BAND = COL_GREY_MID
 
 
 def loess_1d(x, y, frac: float = 0.4):
@@ -153,18 +143,18 @@ def panel_a(ax):
 
     ax.set_xlabel("Year")
     ax.set_ylabel("Temperature (°C)")
-    ax.set_title("A. Annual mean of daily Tmax and Tmin, 2014–2024",
-                 loc="left")
+    ax.set_title("Annual mean of daily $T_{max}$ and $T_{min}$, 2014–2024",
+                 loc="left", pad=10)
     ax.legend(loc="center left", frameon=False)
     ax.set_xlim(2013.5, 2024.5)
+    panel_letter(ax, "A")
 
-    # Trend annotation as a coloured text block in the middle of the panel
-    yrange = annual["tmax"].max() - annual["tmin"].min()
-    y_top = annual["tmin"].min() + yrange * 0.55
+    # Trend annotation as a coloured text block — sits in the white space
+    # between the Tmax and Tmin clusters
     for i, (c, txt) in enumerate(trend_lines):
         ax.text(
             0.97, 0.50 - i * 0.06, txt, transform=ax.transAxes,
-            ha="right", color=c, fontsize=7.5,
+            ha="right", color=c, fontsize=7,
         )
 
 
@@ -180,34 +170,35 @@ def panel_b(ax):
     annual["anomaly"] = annual["t2m_c_mean"] - baseline
 
     # Bars for the anomaly
-    colors = [COL_TMAX if a > 0 else COL_TMIN for a in annual["anomaly"]]
-    ax.bar(annual["year"], annual["anomaly"], color=colors, alpha=0.55, width=0.85,
+    colors = [COL_LANCET_RED if a > 0 else COL_LANCET_BLUE for a in annual["anomaly"]]
+    ax.bar(annual["year"], annual["anomaly"], color=colors, alpha=0.7, width=0.85,
            edgecolor="none")
 
     # Linear trend + 95% CI band
     f = fit_linear_with_ci(annual["year"], annual["anomaly"])
-    ax.plot(annual["year"], f["fit"], "-", color="black", lw=1.4,
+    ax.plot(annual["year"], f["fit"], "-", color=COL_INK, lw=1.4,
             label=f"Linear trend: {f['slope']*10:+.2f} ± {f['slope_ci_half']*10:.2f} °C/decade")
     ax.fill_between(
         annual["year"], f["fit"] - f["band_half"], f["fit"] + f["band_half"],
-        color="black", alpha=0.12, linewidth=0,
+        color=COL_INK, alpha=0.12, linewidth=0,
     )
 
     # LOESS for visual narrative
     xs, ys = loess_1d(annual["year"].values, annual["anomaly"].values, frac=0.35)
-    ax.plot(xs, ys, ":", color="black", lw=1.0, alpha=0.7, label="LOESS smoother")
+    ax.plot(xs, ys, ":", color=COL_INK, lw=1.0, alpha=0.7, label="LOESS smoother")
 
-    ax.axhline(0, color="black", lw=0.5)
+    ax.axhline(0, color=COL_INK, lw=0.5)
     ax.set_xlabel("Year")
     ax.set_ylabel("Anomaly vs 1991–2020 (°C)")
-    ax.set_title("B. Annual mean temperature anomaly, 1980–2024 (ERA5-Land)",
-                 loc="left")
+    ax.set_title("Annual mean temperature anomaly, 1980–2024",
+                 loc="left", pad=10)
     # Add significance text
     p = f["p"]
     p_text = f"p = {p:.1e}" if p < 0.001 else f"p = {p:.3f}"
     ax.text(0.98, 0.05, p_text, transform=ax.transAxes, ha="right",
-            fontsize=8, color="black")
+            fontsize=7.5, color=COL_INK)
     ax.legend(loc="upper left", frameon=False)
+    panel_letter(ax, "B")
 
 
 # ============================================================================
@@ -224,11 +215,11 @@ def panel_c(ax):
     # Shade the 2017-2018 suspect-data window
     suspect_start = pd.Timestamp("2017-01-01")
     suspect_end = pd.Timestamp("2019-01-01")
-    ax.axvspan(suspect_start, suspect_end, color="#BBBBBB", alpha=0.25,
+    ax.axvspan(suspect_start, suspect_end, color=COL_GREY_LIGHT, alpha=0.35,
                linewidth=0)
     ax.text(pd.Timestamp("2018-01-01"), 300,
-            "CAMS NRT elevation\nnot corroborated\nby MAIAC AOD\n(see Panel D)",
-            ha="center", va="top", fontsize=7, color="#444444", style="italic")
+            "CAMS NRT elevation\nnot corroborated\nby MAIAC AOD (Panel D)",
+            ha="center", va="top", fontsize=7, color=COL_GREY_DARK, style="italic")
 
     ax.plot(pm["date"], pm["pm25_mean"], "-", color=COL_PM25, lw=1.2)
     ax.fill_between(pm["date"], pm["pm25_q25"], pm["pm25_q75"], color=COL_PM25,
@@ -240,12 +231,13 @@ def panel_c(ax):
 
     ax.set_xlabel("Year")
     ax.set_ylabel("PM$_{2.5}$ (µg/m³)")
-    ax.set_title("C. Monthly mean PM$_{2.5}$, 2016–2024 (CAMS NRT reanalysis)",
-                 loc="left")
+    ax.set_title("Monthly mean PM$_{2.5}$, 2016–2024",
+                 loc="left", pad=10)
     ax.legend(loc="upper right", frameon=False)
     # Use a log scale because the 2017-18 elevation dwarfs the rest
     ax.set_yscale("log")
     ax.set_ylim(1, 500)
+    panel_letter(ax, "C")
 
 
 # ============================================================================
@@ -273,27 +265,28 @@ def panel_d(ax):
 
     # Shade the same 2017-2018 window so panels C and D line up visually
     ax.axvspan(pd.Timestamp("2017-01-01"), pd.Timestamp("2019-01-01"),
-               color="#BBBBBB", alpha=0.25, linewidth=0)
+               color=COL_GREY_LIGHT, alpha=0.35, linewidth=0)
 
     ax.plot(aod["date"], aod["aod_550_mean"], "-", color=COL_AOD, lw=1.0,
-            alpha=0.7, label="Monthly mean")
+            alpha=0.5, label="Monthly mean")
 
     # 12-month rolling mean for trend visibility
     aod["rolling_12"] = aod["aod_550_mean"].rolling(12, center=True).mean()
-    ax.plot(aod["date"], aod["rolling_12"], "-", color="black", lw=1.4,
+    ax.plot(aod["date"], aod["rolling_12"], "-", color=COL_INK, lw=1.6,
             label="12-month rolling mean")
 
     # Annotate the absence of a 2017-2018 spike
-    ax.text(pd.Timestamp("2018-01-01"), 0.30,
+    ax.text(pd.Timestamp("2018-01-01"), 0.31,
             "No comparable elevation\nin independent product",
-            ha="center", va="top", fontsize=7, color="#444444", style="italic")
+            ha="center", va="top", fontsize=7, color=COL_GREY_DARK, style="italic")
 
     ax.set_xlabel("Year")
     ax.set_ylabel("Aerosol optical depth (550 nm)")
-    ax.set_title("D. MODIS MAIAC AOD 550 nm, 2003–2024 (independent corroboration)",
-                 loc="left")
+    ax.set_title("MODIS MAIAC AOD 550 nm, 2003–2024 (independent corroboration)",
+                 loc="left", pad=10)
     ax.legend(loc="upper right", frameon=False)
     ax.set_ylim(0, 0.35)
+    panel_letter(ax, "D")
 
 
 # ============================================================================
@@ -301,8 +294,8 @@ def panel_d(ax):
 # ============================================================================
 def main() -> int:
     fig = plt.figure(figsize=(11.0, 9.0))
-    gs = fig.add_gridspec(2, 2, hspace=0.42, wspace=0.22,
-                          left=0.07, right=0.96, top=0.94, bottom=0.07)
+    gs = fig.add_gridspec(2, 2, hspace=0.45, wspace=0.24,
+                          left=0.08, right=0.96, top=0.92, bottom=0.10)
     axA = fig.add_subplot(gs[0, 0])
     axB = fig.add_subplot(gs[0, 1])
     axC = fig.add_subplot(gs[1, 0])
@@ -314,8 +307,26 @@ def main() -> int:
     panel_d(axD)
 
     fig.suptitle(
-        "Soweto climate and air-quality trends",
-        fontsize=12, fontweight="bold", y=0.985,
+        "Climate and air-quality trends, Soweto, South Africa",
+        fontsize=11.5, fontweight="bold", y=0.965, x=0.08, ha="left",
+        color=COL_INK,
+    )
+
+    # Data-source footer in the Lancet idiom: two short italic lines below
+    # the plot area, full attribution so the figure is publication-defensible
+    # without leaning on the caption.
+    source_footer(
+        fig,
+        "Data sources  A–B: ERA5-Land reanalysis (Copernicus C3S/ECMWF).  "
+        "C: CAMS NRT global forecast (Copernicus Atmosphere Monitoring Service).  "
+        "D: MODIS MCD19A2 MAIAC AOD v6.1 (NASA LP DAAC).",
+        y=0.040,
+    )
+    source_footer(
+        fig,
+        "Extracted at Soweto −26.27 °S, 27.86 °E with a 5 km buffer. "
+        "Figure prepared 2026-05-11. See MANUSCRIPT_FIGURES.md for assumptions and limitations.",
+        y=0.015,
     )
 
     out_svg = FIG_DIR / "figure1_climate_trends.svg"
